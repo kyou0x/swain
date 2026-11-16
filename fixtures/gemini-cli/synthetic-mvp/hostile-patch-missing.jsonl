@@ -1,0 +1,6 @@
+{"sessionId":"a1b2c3d4-0000-4000-8000-000000000001","projectHash":"0000000000000000000000000000000000000000000000000000000000000000","startTime":"2026-11-15T10:30:00.000Z","lastUpdated":"2026-11-15T10:30:00.000Z"}
+{"id":"11111111-0000-4000-8000-000000000001","timestamp":"2026-11-15T10:30:05.000Z","type":"gemini","content":"kept","toolCalls":[{"id":"t1","name":"read_file","args":{"file_path":"/a"},"status":"success","timestamp":"2026-11-15T10:30:06.000Z","result":"plain"}]}
+{"$patch":{"id":"no-such-message","content":"ghost","toolCalls":[{"id":"t1","result":"x"}]}}
+{"$patch":{"updates":[{"id":"also-missing","content":"ghost"}],"removeIds":["nope",5,null]}}
+{"$patch":{"id":"11111111-0000-4000-8000-000000000001","toolCalls":[{"id":"t-unknown","result":"x"}]}}
+{"$patch":[]}

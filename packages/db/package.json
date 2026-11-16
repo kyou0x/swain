@@ -1,0 +1,21 @@
+{
+  "name": "@swain/db",
+  "version": "0.0.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "type": "module",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/src/index.d.ts",
+      "default": "./dist/src/index.js"
+    }
+  },
+  "dependencies": {
+    "@swain/core": "0.0.0",
+    "@swain/model": "0.0.0",
+    "@swain/report": "0.0.0"
+  }
+}

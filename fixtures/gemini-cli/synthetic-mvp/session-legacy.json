@@ -1,0 +1,97 @@
+{
+  "sessionId": "a1b2c3d4-0000-4000-8000-000000000001",
+  "projectHash": "0000000000000000000000000000000000000000000000000000000000000000",
+  "startTime": "2026-11-15T10:30:00.000Z",
+  "lastUpdated": "2026-11-15T10:30:13.000Z",
+  "summary": "Listed files",
+  "messages": [
+    {
+      "id": "11111111-0000-4000-8000-000000000001",
+      "timestamp": "2026-11-15T10:30:05.000Z",
+      "type": "user",
+      "content": "List the files."
+    },
+    {
+      "id": "11111111-0000-4000-8000-000000000002",
+      "timestamp": "2026-11-15T10:30:09.000Z",
+      "type": "gemini",
+      "content": "Listing.",
+      "toolCalls": [
+        {
+          "id": "list_directory-1700000000010-aaaa",
+          "name": "list_directory",
+          "args": {
+            "dir_path": "/home/user/project"
+          },
+          "result": [
+            {
+              "functionResponse": {
+                "id": "list_directory-1700000000010-aaaa",
+                "name": "list_directory",
+                "response": {
+                  "output": "Directory listing for /home/user/project:\napp.js"
+                }
+              }
+            }
+          ],
+          "status": "success",
+          "timestamp": "2026-11-15T10:30:10.000Z"
+        },
+        {
+          "id": "replace-1700000000011-bbbb",
+          "name": "replace",
+          "args": {
+            "file_path": "/home/user/project/app.js",
+            "old_string": "a",
+            "new_string": "b",
+            "instruction": "x"
+          },
+          "result": [
+            {
+              "functionResponse": {
+                "id": "replace-1700000000011-bbbb",
+                "name": "replace",
+                "response": {
+                  "output": "ok"
+                }
+              }
+            }
+          ],
+          "status": "success",
+          "timestamp": "2026-11-15T10:30:11.000Z"
+        }
+      ],
+      "tokens": {
+        "input": 10,
+        "output": 5,
+        "cached": 0,
+        "thoughts": 0,
+        "tool": 0,
+        "total": 15
+      },
+      "model": "gemini-2.5-pro"
+    },
+    {
+      "id": "11111111-0000-4000-8000-000000000003",
+      "timestamp": "2026-11-15T10:30:12.000Z",
+      "type": "user",
+      "content": [
+        {
+          "functionResponse": {
+            "id": "list_directory-1700000000010-aaaa",
+            "name": "list_directory",
+            "response": {
+              "output": "Directory listing for /home/user/project:\napp.js"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "11111111-0000-4000-8000-000000000004",
+      "timestamp": "2026-11-15T10:30:13.000Z",
+      "type": "info",
+      "content": "Legacy info message"
+    }
+  ]
+}

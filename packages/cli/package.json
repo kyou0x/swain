@@ -1,0 +1,32 @@
+{
+  "name": "@swain/cli",
+  "version": "0.0.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "type": "module",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/src/main.d.ts",
+      "default": "./dist/src/main.js"
+    }
+  },
+  "bin": {
+    "swain": "./dist/src/swain-bin.js",
+    "atm": "./dist/src/bin.js"
+  },
+  "dependencies": {
+    "@swain/adapter-claude-code": "0.0.0",
+    "@swain/adapter-codex-cli": "0.0.0",
+    "@swain/adapter-gemini-cli": "0.0.0",
+    "@swain/adapter-opencode": "0.0.0",
+    "@swain/client": "0.0.0",
+    "@swain/core": "0.0.0",
+    "@swain/db": "0.0.0",
+    "@swain/report": "0.0.0",
+    "@swain/server": "0.0.0",
+    "@swain/store": "0.0.0"
+  }
+}

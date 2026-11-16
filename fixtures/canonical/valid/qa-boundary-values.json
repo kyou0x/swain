@@ -1,0 +1,95 @@
+{
+  "schemaVersion": "0.1.0",
+  "eventId": "evt_3516bc95641f9edb7d92b0b70e12d34b",
+  "kind": "tool.requested",
+  "provider": "codex-cli",
+  "providerVersion": "0.0.0-synthetic",
+  "sourceKind": "codex-cli.exec-jsonl",
+  "sessionId": "ses_4fa00e817146832a5dd83c1f1f619ac0",
+  "turnId": "trn_ec8d13a1472bf23b8b9e89232637584c",
+  "sourceSequence": 9007199254740991,
+  "subIndex": 1023,
+  "time": {
+    "value": "2999-12-31T23:59:59.999Z",
+    "origin": "source",
+    "status": "valid"
+  },
+  "actor": {
+    "actorId": "act_bcd41d433a6786d9061660539c61b618",
+    "role": "agent"
+  },
+  "status": "none",
+  "payload": {
+    "toolCallId": "tc_da8963fed47a95609534021f92bcec4f",
+    "toolName": "éééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééé",
+    "toolNamespace": "builtin",
+    "input": {
+      "sha256": "3782f8d6e8a9bedd9f99247407f93eeb369dfccfca47cc57c742ec5676672543",
+      "byteLength": 28,
+      "encoding": "jcs-json",
+      "retention": "hash-only"
+    }
+  },
+  "links": [],
+  "provenance": {
+    "type": "record",
+    "sourceId": "src_5d52b818f9ac13abb8ec52467baa7540",
+    "line": 6,
+    "byteOffset": 500,
+    "byteLength": 99,
+    "sha256": "48d9489bd6dfc146e7287fb6fb5c0469a0dfd7b788dcba13e8f0a48dbec4eb42",
+    "pointer": "",
+    "adapter": {
+      "id": "codex-cli.exec-jsonl",
+      "version": "0.0.1"
+    }
+  },
+  "completeness": {
+    "timestamp": {
+      "state": "captured"
+    },
+    "actor": {
+      "state": "captured"
+    },
+    "inputs": {
+      "state": "captured"
+    },
+    "outputs": {
+      "state": "captured"
+    }
+  },
+  "attributes": {
+    "codex-cli.k0": "😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀",
+    "codex-cli.k1": -1,
+    "codex-cli.k2": "😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀",
+    "codex-cli.k3": -3,
+    "codex-cli.k4": "😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀",
+    "codex-cli.k5": -5,
+    "codex-cli.k6": "😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀",
+    "codex-cli.k7": -7,
+    "codex-cli.k8": "😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀",
+    "codex-cli.k9": -9,
+    "codex-cli.k10": "😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀",
+    "codex-cli.k11": -11,
+    "codex-cli.k12": "😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀",
+    "codex-cli.k13": -13,
+    "codex-cli.k14": "😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀",
+    "codex-cli.k15": -15,
+    "codex-cli.k16": "😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀",
+    "codex-cli.k17": -17,
+    "codex-cli.k18": "😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀",
+    "codex-cli.k19": -19,
+    "codex-cli.k20": "😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀",
+    "codex-cli.k21": -21,
+    "codex-cli.k22": "😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀",
+    "codex-cli.k23": -23,
+    "codex-cli.k24": "😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀",
+    "codex-cli.k25": -25,
+    "codex-cli.k26": "😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀",
+    "codex-cli.k27": -27,
+    "codex-cli.k28": "😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀",
+    "codex-cli.k29": -29,
+    "codex-cli.k30": "😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀",
+    "codex-cli.k31": -31
+  }
+}

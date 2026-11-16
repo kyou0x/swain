@@ -1,0 +1,608 @@
+{
+  "invalid/attribute-float.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "not-integer"
+    ],
+    "sha256": "2ed685c625b15c12d108ad76e1a500baa1cc8bf3873f110d649bedc4b747d791"
+  },
+  "invalid/attributes-33.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "too-many-keys"
+    ],
+    "sha256": "5426e9555b736bfaf4b9350d0666c1de9159ac09bbc9a1cfa3d8c0a0bcddf2eb"
+  },
+  "invalid/bound-adapterId-65.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "too-long"
+    ],
+    "sha256": "b885830b29a7b0149e47281b2da58c59682bc8f8965c3d681828f23f2652ea35"
+  },
+  "invalid/bound-adapterVersion-33.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "too-long"
+    ],
+    "sha256": "7dc4fd98c7dd580129f1931b90160352c0645c5b745a7321d40605660cc7fbdb"
+  },
+  "invalid/bound-attributeKey-97.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "too-long"
+    ],
+    "sha256": "1ddc1f7ab7a9e60243e76e2b49ef08ec2df0cbc5639d072e2d6a38ad4b199774"
+  },
+  "invalid/bound-attributeString-257.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "too-long"
+    ],
+    "sha256": "629d7199ddb3c19b6ae20d0922f1e5bc1aebc04dcfd6c07add62ff4a73f9ce9d"
+  },
+  "invalid/bound-bounded256-257.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "too-long"
+    ],
+    "sha256": "74594c5b8a640b49a65f139d7734a0bc34e3b5e3c16311c92b35527361975519"
+  },
+  "invalid/bound-bounded512-513.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "too-long"
+    ],
+    "sha256": "655026696eed3c15bb74ab6dbac7f45f27cb58f4359c9160a21a47f41788c841"
+  },
+  "invalid/bound-bounded512-multibyte-514.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "too-long"
+    ],
+    "sha256": "64b4d74eaabb9572228b3bda5eb1f8a8df17380b331743ca403978acd5e35c92"
+  },
+  "invalid/bound-filePath-4097.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "too-long"
+    ],
+    "sha256": "8e29857bfb370c303c28bba8e05587afb586285e620913ea646d9c4350290ae3"
+  },
+  "invalid/bound-id-37.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "wrong-length"
+    ],
+    "sha256": "0f6dc000d4b8583665b6ff6a47b74bb669c854123f73d3628a62da1e90b242c6"
+  },
+  "invalid/bound-inline-1048577.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "too-long"
+    ],
+    "sha256": "92abb53899136ed2d1598e39645512b9aa5acef3cfee3b040d9130b34555659e"
+  },
+  "invalid/bound-pointer-513.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "too-long"
+    ],
+    "sha256": "c918bbeb12960cf21e58de08c7b580d2162bed829046b4a2f6fa30058ab5a6d5"
+  },
+  "invalid/bound-providerVersion-65.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "too-long"
+    ],
+    "sha256": "a197010333b811df07ed2c0b544a213abf613107ace893e6a43ff85374b10db2"
+  },
+  "invalid/bound-rule-65.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "too-long"
+    ],
+    "sha256": "4c726b8f0110147bdf7fd67eecebe7f25ad808b12f0b271858b769a820d1178a"
+  },
+  "invalid/bound-schemaVersion-17.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "too-long"
+    ],
+    "sha256": "84e3ab6793d7f6ac2b85f5012524b0ea30f55f5c494e8d3110a4bd0671d505b2"
+  },
+  "invalid/bound-sha256-65.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "wrong-length"
+    ],
+    "sha256": "6607cba49e7a0cef6a6d01973dc1cba21b062e02dc5fa197d089887ec79ed6da"
+  },
+  "invalid/bound-sourceKind-65.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "too-long"
+    ],
+    "sha256": "67dd651920025dbbb9777661bd1809c8cc87956bafb6839551490a89b7e09f76"
+  },
+  "invalid/bound-tcId-36.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "wrong-length"
+    ],
+    "sha256": "d2e9466578cbdcfa6f8766b0f51721bc2ed1839cde710a19d86b571b42bf50a5"
+  },
+  "invalid/bound-timeValue-25.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "wrong-length"
+    ],
+    "sha256": "9e956d1751c7f0aadeaf1a6f8f3e9d14ad919726563b950190f62ab26e5e2305"
+  },
+  "invalid/float-token-count.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "not-integer"
+    ],
+    "sha256": "4173dbcbcacc0f08d92a91ce1bbf29b9012d1b30920952d1e1c147a70adc8797"
+  },
+  "invalid/hash-only-with-inline.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "inline-with-hash-only"
+    ],
+    "sha256": "c73adab7ae6c67b68dfb894740da5a0cad806b7008b60d278a55d6e219e1b3f4"
+  },
+  "invalid/hash-uppercase.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "bad-pattern"
+    ],
+    "sha256": "e471eab46dba31f5a3d5eabf0b22af72d7b4895e21a32eceb2054f35cb7012c9"
+  },
+  "invalid/id-bad-format.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "bad-pattern"
+    ],
+    "sha256": "b37ff18fa338a8e12b32dff8dc6720bea499afa807163bd1e273f4be2137a3f4"
+  },
+  "invalid/id-wrong-prefix.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "bad-pattern"
+    ],
+    "sha256": "ea48c6972c3651bc2e8bc59d8cd209247fed40948e26b636320bedff06849067"
+  },
+  "invalid/links-17.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "too-many-items"
+    ],
+    "sha256": "430c04d5a7582d349253daf49640bb850cfbf948af8a70e213d82653841008ca"
+  },
+  "invalid/lone-surrogate.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "ill-formed-string"
+    ],
+    "sha256": "00a2cf7954864e9971e9fc100d4b504cf3c315c51d4e7945838845aac0876b25"
+  },
+  "invalid/missing-required-facet.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "missing-facet"
+    ],
+    "sha256": "e6cfd99974d2dd7d756e0ee5fe45d6dfecc84b0b39b91efb16d637028ea17a9a"
+  },
+  "invalid/payload-missing-toolname.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "missing-key"
+    ],
+    "sha256": "45ed7a3b6b14abd1572fe4d6041a91cf74261a614313796dee781f7918493fdf"
+  },
+  "invalid/payload-unknown-key.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "unknown-key"
+    ],
+    "sha256": "636cacbd841e24336248ccabab746a9afcd5737f524087003e1dc5198ea121a5"
+  },
+  "invalid/proto-key.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "unknown-key"
+    ],
+    "sha256": "bc835084493a7a332d29269785ef2367d1b00823e84ef34704ceaeff9607599b"
+  },
+  "invalid/qa-adapter-version-two-parts.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "bad-pattern"
+    ],
+    "sha256": "841f2c0dc7ba62c9af625a38cbef94c01d8c654031015fa849e4d7e490d48cbc"
+  },
+  "invalid/qa-attribute-key-no-namespace.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "bad-pattern"
+    ],
+    "sha256": "936298fc5ce5ef638576d890d68a531627edafe2bb984427794f740ae30b8a24"
+  },
+  "invalid/qa-attribute-unsafe-int.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "not-integer"
+    ],
+    "sha256": "f1cafb2994417ffcb3ebe643c6d052936968f42f5bc4846d4d9f4c2b5e397e41"
+  },
+  "invalid/qa-derived-empty-basis.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "too-few-items"
+    ],
+    "sha256": "8427fd38979bd9a0d28e58f061eaee2cf4868d39753a62cc1100d8c3e3729b7b"
+  },
+  "invalid/qa-filepath-nul.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "forbidden-char"
+    ],
+    "sha256": "459095d47d1ba07c782306f4e0ed6223b21150f9ecbdf8fa285a8bf310a2cfee"
+  },
+  "invalid/qa-missing-turnid-key.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "missing-key"
+    ],
+    "sha256": "4bf25fedb366900f6876c89c49ac69470cb3410c6b8d5a03d0ae2776d2f4efd8"
+  },
+  "invalid/qa-pointer-bad-tilde-escape.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "bad-pattern"
+    ],
+    "sha256": "596f723ed34dfef58daaf611a034a9bf58a58b55c2f36b50048c153187485910"
+  },
+  "invalid/qa-pointer-no-leading-slash.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "bad-pattern"
+    ],
+    "sha256": "bdc761e89ecb626de04dde27c98c20e47800fc9b0eaea30cb78d7d614cda86a1"
+  },
+  "invalid/qa-provenance-type-unknown.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "bad-enum"
+    ],
+    "sha256": "be6665d2a90daa2d0dbbcbd56a6ad73be84bb8e300db4870aeb0c9c2ef8286ec"
+  },
+  "invalid/qa-provider-unknown.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "bad-enum"
+    ],
+    "sha256": "51b69664c80106cc4a3722bde85ac9f705152af9642c1ff3912ccd6c7284c703"
+  },
+  "invalid/qa-providerversion-space.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "bad-pattern"
+    ],
+    "sha256": "f92bf5c0d6bec7fa519c4019fd27f0c11d5e353c7885c09ef13f28caa239b281"
+  },
+  "invalid/qa-result-of-without-causality.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "missing-facet"
+    ],
+    "sha256": "0a0ed5f6cfb75c12a3d03d6872ed9d97c9c7c2879b17264b04a467126ba1ee35"
+  },
+  "invalid/qa-sequence-unsafe-integer.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "not-integer"
+    ],
+    "sha256": "a69f6db2b6cc9a66ddbc0aa7ea3a4515fcfd5dc6de77ad389bd1cf4353b0071c"
+  },
+  "invalid/qa-set-interleaved-sources.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "out-of-order"
+    ],
+    "sha256": "212bc24eddb2b0f69b5738ef7aab46e351f81fa7ed5fc5752d0f4a537ad94795"
+  },
+  "invalid/qa-source-unknown-unsorted.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "not-sorted"
+    ],
+    "sha256": "86fda5bf7172dd65d222c1776996e64867beefeded49d053d179ae2dcb72ea0d"
+  },
+  "invalid/qa-sourcekind-uppercase.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "bad-pattern"
+    ],
+    "sha256": "a0df0cdcd554349d84b27ad8c184d7b63f3e514a038f2e8d9e0c05eba19a4f34"
+  },
+  "invalid/qa-status-failure-on-completed.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "status-not-allowed"
+    ],
+    "sha256": "afa31f4fc8ab2a2faf6a037497d786ff075dc26a386d0a0d8c0152b14c1f32c6"
+  },
+  "invalid/qa-status-success-on-failed.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "status-not-allowed"
+    ],
+    "sha256": "6163ad1d9e525aa4bea25313d7c97ad2e73656ba8ecbca9f7cc2a39937b5b12e"
+  },
+  "invalid/qa-tcid-uppercase-hex.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "bad-pattern"
+    ],
+    "sha256": "d099b7cf8bfb892038bf94191506fe56df06373ac6f81f3d2d65a5be4c112a35"
+  },
+  "invalid/qa-time-hour-24.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "bad-time"
+    ],
+    "sha256": "07e894042df22dbe706ce733dcc9e83f7a3392f55959056c62aec008799a5fd0"
+  },
+  "invalid/qa-time-lowercase-z.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "bad-pattern"
+    ],
+    "sha256": "f89400f58ea0aa351990eb68e666338cc1668a980f251ad30ff069d7e2d63b9d"
+  },
+  "invalid/qa-time-missing-with-value.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "bad-time"
+    ],
+    "sha256": "1da7aa9e97987e80dc88953e41ff6de52c391ccc5ebe5604317bac51950c872d"
+  },
+  "invalid/qa-time-valid-origin-none.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "bad-time"
+    ],
+    "sha256": "cc1309a58741ba54cda38e9e2c7c1caa5722569dda8284a734e55dcbadcc7bf6"
+  },
+  "invalid/qa-time-year-3000.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "bad-time"
+    ],
+    "sha256": "f0dd48e1cb82d2e19280f6be3f3b232a669bcfa784eed33a2740bf922f7215ee"
+  },
+  "invalid/qa-toolnamespace-case.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "bad-enum"
+    ],
+    "sha256": "dcf8a1b9bc185846ea7fba75363f80df91b1d257bab9d001139df56d81b27d1c"
+  },
+  "invalid/qa-usage-negative-cost.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "out-of-range"
+    ],
+    "sha256": "d6fab0dab13c9c300fa98fa4ed3067934fac7b5e6733b81a11bb147a68ccf6a4"
+  },
+  "invalid/qa-usage-negative-tokens.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "out-of-range"
+    ],
+    "sha256": "5c79c467b5bf427349bbc9f874534acdd6d04044599e274db0ba5235f5bb0a6e"
+  },
+  "invalid/schema-version-0.2.0.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "unsupported-schema-version"
+    ],
+    "sha256": "6000019bfca86e06fca9a1e26c08045b644fa60cda2ab65c5e064afc294fa299"
+  },
+  "invalid/schema-version-1.0.0.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "unsupported-schema-version"
+    ],
+    "sha256": "96843860ce0dfa8369c7a520d4a10b118627c6f596da2f4fe6b8cbc1c1415b1e"
+  },
+  "invalid/sequence-negative.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "out-of-range"
+    ],
+    "sha256": "28805071d10bef1657c45bd5e57f75d587364ecd25dff940efe35bdbd6f76f58"
+  },
+  "invalid/sequence-string.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "wrong-type"
+    ],
+    "sha256": "c77585da332c4d2acd111da5704df41f61d09ebe58630c32c43ba06ec1dfe56f"
+  },
+  "invalid/set-dangling-link.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "dangling-link"
+    ],
+    "sha256": "8b3de0a24178bd1af1fa1dbf54ac55117e6501e5a0db2831862554e8720c4677"
+  },
+  "invalid/set-derived-missing-basis.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "dangling-basis"
+    ],
+    "sha256": "334e9af7a5c7ccb133acf17738ec22ce45d38ca5da753fe43cea235737f2a623"
+  },
+  "invalid/set-duplicate-event-id.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "duplicate-event-id"
+    ],
+    "sha256": "84028569bd36a1f9822b0530d05daac0416f0bc65b3bcf7df09f2d6c52df9422"
+  },
+  "invalid/set-out-of-order-sequence.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "out-of-order"
+    ],
+    "sha256": "0855c1e70093a7a778d9d9f1b3097d8451e498001572871b5f20d7ccf39c26f6"
+  },
+  "invalid/status-success-on-request.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "status-not-allowed"
+    ],
+    "sha256": "d0cc82fba3352be755b37b3634635967ef6fcfd12a451d308291c76717e430e9"
+  },
+  "invalid/subindex-1024.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "out-of-range"
+    ],
+    "sha256": "42fdec2da08621236a18c4145e9d5ea2dceacc4f2166631dbee1144414a08983"
+  },
+  "invalid/time-origin-receipt.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "bad-enum"
+    ],
+    "sha256": "66dbd358dfddc527f096a15fcfc78d4c4a811235d876a0b7ec6b3cd471ae1420"
+  },
+  "invalid/time-valid-null-value.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "bad-time"
+    ],
+    "sha256": "87fff8c443872b935c9c04b1a64a7e4607f82cc89199c676ff64e90da1b54a09"
+  },
+  "invalid/time-value-out-of-calendar.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "bad-time"
+    ],
+    "sha256": "0b415e9491801e11da247a04f75acb1d849908950ccc7f6878aa76b5979f81fd"
+  },
+  "invalid/unknown-key.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "unknown-key"
+    ],
+    "sha256": "f1a1f27c7317d236b80387de87b250efc6f6262412de7e097df2b4184512636c"
+  },
+  "invalid/unknown-kind.json": {
+    "valid": false,
+    "expectedIssueCodes": [
+      "bad-enum"
+    ],
+    "sha256": "2d29b7bc77d1f2cc926eec887d78d3f27e7e9e6d8a59b0d6ddf5937901f26a22"
+  },
+  "valid/agent.ended.json": {
+    "valid": true,
+    "expectedIssueCodes": [],
+    "sha256": "a9072331658b61eabfbbf29d01360e1ec4e5d6147dd1e78336abc82ba254879d"
+  },
+  "valid/agent.started.json": {
+    "valid": true,
+    "expectedIssueCodes": [],
+    "sha256": "b88d132ee745d10f7e0487cd7ed62598a5ecfeec65f73f388b5acb3e773d85f1"
+  },
+  "valid/capture.gap.json": {
+    "valid": true,
+    "expectedIssueCodes": [],
+    "sha256": "df2d2cb1d90aa58e89b1627058db9b6a0a957bd6251021fa873ecb8edb8cb900"
+  },
+  "valid/events-with-links.json": {
+    "valid": true,
+    "expectedIssueCodes": [],
+    "sha256": "a134737288d3cbc287c3985139e232ebc54eddf2453fbdf97c26ba84702e05fa"
+  },
+  "valid/file.changed.json": {
+    "valid": true,
+    "expectedIssueCodes": [],
+    "sha256": "2cdde3776c7a146bd7b9ca7951f24a89ddae4d205e1b6f617280dca383acc7be"
+  },
+  "valid/message.observed.json": {
+    "valid": true,
+    "expectedIssueCodes": [],
+    "sha256": "d6f05d4455a1a9163ad215f66eab72eb7b7ec6f5868e6d9ca3d7227d79195ec6"
+  },
+  "valid/model.usage.json": {
+    "valid": true,
+    "expectedIssueCodes": [],
+    "sha256": "2de09acd9c2e1b149be06272f9138cd467ce5189ae78e767ab89f38b320b6291"
+  },
+  "valid/permission.decided.json": {
+    "valid": true,
+    "expectedIssueCodes": [],
+    "sha256": "66f85916928cd59d0f0f474d7c15b970cdd8023c036d86ac97e968a8faa4dcb7"
+  },
+  "valid/permission.requested.json": {
+    "valid": true,
+    "expectedIssueCodes": [],
+    "sha256": "fd20ab6588e354f5615d783a258408e0933a7628d1cd76528cef1e6688394768"
+  },
+  "valid/qa-boundary-values.json": {
+    "valid": true,
+    "expectedIssueCodes": [],
+    "sha256": "36e4554b07e655ebfe3a2d25f9addc4bbfc330428bbf01d3d4a07ce8a510dcab"
+  },
+  "valid/qa-epoch-and-empty-toolname.json": {
+    "valid": true,
+    "expectedIssueCodes": [],
+    "sha256": "e57b93747a0373c65bbe1336fe05aac199c7644d8846bf335aa48eb181ad6ff1"
+  },
+  "valid/session.ended.json": {
+    "valid": true,
+    "expectedIssueCodes": [],
+    "sha256": "62ca7a1950c4d651f326b1e9beb35f12452a24dee8541f3b28a73b072c67bdc9"
+  },
+  "valid/session.started.json": {
+    "valid": true,
+    "expectedIssueCodes": [],
+    "sha256": "436a7149336f3b8b88def52dc5c816040205815335e8ba927a7255b45b3c90a1"
+  },
+  "valid/source.unknown.json": {
+    "valid": true,
+    "expectedIssueCodes": [],
+    "sha256": "0ba2b2ae51af7860e1ae6c0f11f3dbf55b19c0c7e98feaacebfcda6eee39312e"
+  },
+  "valid/tool.completed.json": {
+    "valid": true,
+    "expectedIssueCodes": [],
+    "sha256": "53e2c41060309b0cf73b69fabe8109736f84f572fa9201fa3324c6e4cac33f6e"
+  },
+  "valid/tool.failed.json": {
+    "valid": true,
+    "expectedIssueCodes": [],
+    "sha256": "c6d506cd7dcd41ab7d9663c1ea96fd386856384790bdd44e0cba93928f73c0a4"
+  },
+  "valid/tool.requested.json": {
+    "valid": true,
+    "expectedIssueCodes": [],
+    "sha256": "8b6243687df2edecfe75c6454dcd5d53c2f54b736f6e6ef7c753d8164c6cb3f6"
+  },
+  "valid/turn.ended.json": {
+    "valid": true,
+    "expectedIssueCodes": [],
+    "sha256": "4cd36ff45bfebac534b87c92c3d6499e6a928b223a698364d2dcc367c84511f6"
+  },
+  "valid/turn.started.json": {
+    "valid": true,
+    "expectedIssueCodes": [],
+    "sha256": "11fe352ed13ab5f3d2f92cbcfe6e25c6bd5064b3cd82beb908eb61d6e7704eb2"
+  }
+}

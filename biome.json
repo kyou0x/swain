@@ -1,0 +1,21 @@
+{
+  "files": {
+    "includes": [
+      "packages/**",
+      "!**/dist",
+      "!**/node_modules",
+      "!!.claude",
+      "tools/*.mjs",
+      "biome.json",
+      "package.json",
+      "tsconfig.base.json",
+      "tsconfig.json"
+    ]
+  },
+  "vcs": { "enabled": false },
+  "formatter": { "enabled": true, "indentStyle": "space", "indentWidth": 2, "lineWidth": 100 },
+  "linter": {
+    "enabled": true,
+    "rules": { "preset": "recommended", "complexity": { "useLiteralKeys": "off" } }
+  }
+}

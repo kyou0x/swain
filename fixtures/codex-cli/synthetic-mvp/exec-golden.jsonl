@@ -1,0 +1,23 @@
+{"type":"thread.started","thread_id":"00000000-0000-4000-8000-000000000001"}
+{"type":"turn.started"}
+{"type":"item.started","item":{"id":"item_0","type":"command_execution","command":"ls","aggregated_output":"","exit_code":null,"status":"in_progress"}}
+{"type":"item.completed","item":{"id":"item_0","type":"command_execution","command":"ls","aggregated_output":"a.txt\n","exit_code":0,"status":"completed"}}
+{"type":"item.completed","item":{"id":"item_1","type":"reasoning","text":"Checking files"}}
+{"type":"item.started","item":{"id":"item_2","type":"command_execution","command":"cat nope","aggregated_output":"","exit_code":null,"status":"in_progress"}}
+{"type":"item.completed","item":{"id":"item_2","type":"command_execution","command":"cat nope","aggregated_output":"cat: nope: No such file\n","exit_code":1,"status":"completed"}}
+{"type":"item.completed","item":{"id":"item_3","type":"command_execution","command":"rm -rf x","aggregated_output":"","exit_code":null,"status":"declined"}}
+{"type":"item.completed","item":{"id":"item_4","type":"file_change","changes":[{"path":"/home/user/project/a.txt","kind":"update"},{"path":"/home/user/project/new.txt","kind":"add"}],"status":"completed"}}
+{"type":"item.started","item":{"id":"item_5","type":"mcp_tool_call","server":"docs","tool":"search","arguments":{"q":"x"},"result":null,"error":null,"status":"in_progress"}}
+{"type":"item.completed","item":{"id":"item_5","type":"mcp_tool_call","server":"docs","tool":"search","arguments":{"q":"x"},"result":{"content":[],"structured_content":null},"error":null,"status":"completed"}}
+{"type":"item.completed","item":{"id":"item_6","type":"mcp_tool_call","server":"docs","tool":"fetch","arguments":{},"result":null,"error":{"message":"boom"},"status":"failed"}}
+{"type":"item.completed","item":{"id":"item_7","type":"collab_tool_call","tool":"spawn_agent","sender_thread_id":"00000000-0000-4000-8000-000000000001","receiver_thread_ids":["00000000-0000-4000-8000-0000000000b1"],"prompt":"do it","agents_states":{},"status":"completed"}}
+{"type":"item.completed","item":{"id":"item_8","type":"web_search","id":"ws_1","query":"q","action":{"type":"search"}}}
+{"type":"item.started","item":{"id":"item_9","type":"todo_list","items":[{"text":"a","completed":false}]}}
+{"type":"item.updated","item":{"id":"item_9","type":"todo_list","items":[{"text":"a","completed":true}]}}
+{"type":"item.completed","item":{"id":"item_9","type":"todo_list","items":[{"text":"a","completed":true}]}}
+{"type":"item.completed","item":{"id":"item_10","type":"error","message":"model rerouted: A -> B"}}
+{"type":"item.completed","item":{"id":"item_11","type":"agent_message","text":"Done."}}
+{"type":"turn.completed","usage":{"input_tokens":1200,"cached_input_tokens":800,"cache_write_input_tokens":0,"output_tokens":150,"reasoning_output_tokens":40}}
+{"type":"turn.started"}
+{"type":"turn.failed","error":{"message":"stream disconnected"}}
+{"type":"error","message":"fatal <b>x</b>"}

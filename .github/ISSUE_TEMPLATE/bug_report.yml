@@ -1,0 +1,42 @@
+name: Bug report
+description: Something does not work as documented
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the report. **Do not paste real sessions, telemetry, keys or personal data.**
+        For security issues, use the private advisory form instead (see SECURITY.md).
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: Commands and a minimal synthetic input, if possible.
+      render: shell
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Swain version or commit
+      placeholder: "swain --version, or the commit SHA"
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: Environment
+      placeholder: "OS, Node.js version, agent/exporter and its version"
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant output
+      description: Redact anything sensitive.
+      render: text

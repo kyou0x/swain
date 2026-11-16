@@ -1,0 +1,62 @@
+{
+  "schemaVersion": "0.1.0",
+  "eventId": "evt_a8d8b16109d3c91e7d2aa33d1eeba7ef",
+  "kind": "file.changed",
+  "provider": "codex-cli",
+  "providerVersion": "0.0.0-synthetic",
+  "sourceKind": "codex-cli.exec-jsonl",
+  "sessionId": "ses_4fa00e817146832a5dd83c1f1f619ac0",
+  "turnId": "trn_ec8d13a1472bf23b8b9e89232637584c",
+  "sourceSequence": 10,
+  "subIndex": 0,
+  "time": {
+    "value": "2026-01-01T00:00:20.000Z",
+    "origin": "source",
+    "status": "valid"
+  },
+  "actor": {
+    "actorId": "act_bcd41d433a6786d9061660539c61b618",
+    "role": "agent"
+  },
+  "status": "success",
+  "payload": {
+    "path": "src/a\u0000b.ts",
+    "changeKind": "update",
+    "diff": {
+      "sha256": "ac6e902a40955a5feb563e6865f4289022362fd00431e29a7fcad84667bd6ee1",
+      "byteLength": 14,
+      "encoding": "utf8",
+      "retention": "hash-only"
+    },
+    "viaToolCallId": "tc_da8963fed47a95609534021f92bcec4f",
+    "basis": "provider-reported"
+  },
+  "links": [],
+  "provenance": {
+    "type": "record",
+    "sourceId": "src_5d52b818f9ac13abb8ec52467baa7540",
+    "line": 11,
+    "byteOffset": 1000,
+    "byteLength": 99,
+    "sha256": "48d9489bd6dfc146e7287fb6fb5c0469a0dfd7b788dcba13e8f0a48dbec4eb42",
+    "pointer": "",
+    "adapter": {
+      "id": "codex-cli.exec-jsonl",
+      "version": "0.0.1"
+    }
+  },
+  "completeness": {
+    "timestamp": {
+      "state": "captured"
+    },
+    "actor": {
+      "state": "captured"
+    }
+  },
+  "attributes": {
+    "codex-cli.note": "synthetic",
+    "codex-cli.count": 1,
+    "codex-cli.flag": true,
+    "codex-cli.none": null
+  }
+}

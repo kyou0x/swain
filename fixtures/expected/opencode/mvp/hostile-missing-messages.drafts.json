@@ -1,0 +1,95 @@
+{
+  "dispositions": [],
+  "drafts": [
+    {
+      "actor": {
+        "role": "runtime"
+      },
+      "actorKey": "runtime",
+      "attributes": {
+        "opencode.cwd": "/home/user/project"
+      },
+      "completeness": {
+        "actor": {
+          "state": "captured"
+        },
+        "timestamp": {
+          "state": "captured"
+        }
+      },
+      "kind": "session.started",
+      "nativeSessionId": "ses_fake01",
+      "payload": {
+        "nativeSessionId": "ses_fake01",
+        "trigger": "unknown"
+      },
+      "pointer": "/info",
+      "providerVersion": "1.19.5",
+      "recordRef": {
+        "evidence": 0,
+        "order": 0
+      },
+      "status": "none",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-09-21T14:13:20.000Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "runtime"
+      },
+      "actorKey": "runtime",
+      "attributes": {},
+      "completeness": {
+        "actor": {
+          "state": "captured"
+        },
+        "model": {
+          "state": "captured"
+        },
+        "timestamp": {
+          "state": "captured"
+        },
+        "tokens": {
+          "state": "captured"
+        }
+      },
+      "kind": "model.usage",
+      "payload": {
+        "cacheWriteInputTokens": 300,
+        "cachedInputTokens": 1000,
+        "costUsdEstimate": 0.0123,
+        "inputTokens": 1500,
+        "model": "fake-model",
+        "outputTokens": 200,
+        "reasoningOutputTokens": 50,
+        "scope": "session"
+      },
+      "pointer": "/info/tokens",
+      "providerVersion": "1.19.5",
+      "recordRef": {
+        "evidence": 0,
+        "order": 0
+      },
+      "status": "none",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-09-21T14:14:20.000Z"
+      }
+    }
+  ],
+  "warnings": [
+    {
+      "code": "unmapped-field",
+      "detail": {
+        "fieldCode": "oc.session-info-fields",
+        "occurrences": 1
+      },
+      "severity": "info",
+      "sourceSequence": null
+    }
+  ]
+}

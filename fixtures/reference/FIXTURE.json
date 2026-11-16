@@ -1,0 +1,6 @@
+{
+  "synthetic": true,
+  "verifiedAgainstRealOutput": false,
+  "description": "Tiny synthetic reference log format used only to exercise the core pipeline contract. Not a provider.",
+  "note": "Hand-written synthetic bytes. No real session data."
+}

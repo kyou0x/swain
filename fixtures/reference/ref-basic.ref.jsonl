@@ -1,0 +1,9 @@
+{"t":"session","id":"S-0001","ts":"2026-01-01T00:00:00Z","v":"9.9.9"}
+{"t":"turn.start","turn":"T1","ts":"2026-01-01T00:00:01Z","text":"hello reference"}
+{"t":"tool.call","call":"C1","name":"Read","ts":"2026-01-01T00:00:02Z","input":{"path":"a.txt"}}
+{"t":"tool.result","call":"C1","ok":true,"ts":"2026-01-01T00:00:03Z","output":"contents"}
+{"t":"tool.call","call":"C2","name":"Bash","ts":"2026-01-01T00:00:04Z","input":{"cmd":"ls"}}
+{"t":"tool.result","call":"C9","ok":false,"ts":"2026-01-01T00:00:05Z"}
+{"t":"meta","note":"header note"}
+{"t":"mystery","x":1}
+{"t":"turn.end","turn":"T1","ts":"2026-01-01T00:00:06Z"}

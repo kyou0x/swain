@@ -1,0 +1,959 @@
+{
+  "dispositions": [],
+  "drafts": [
+    {
+      "actor": {
+        "role": "runtime"
+      },
+      "actorKey": "runtime",
+      "attributes": {
+        "opencode.cwd": "/home/user/<img src=x onerror=alert(1)>"
+      },
+      "completeness": {
+        "actor": {
+          "state": "captured"
+        },
+        "timestamp": {
+          "state": "captured"
+        }
+      },
+      "kind": "session.started",
+      "nativeSessionId": "ses_<script>alert(1)</script>",
+      "payload": {
+        "nativeSessionId": "ses_<script>alert(1)</script>",
+        "trigger": "unknown"
+      },
+      "pointer": "/info",
+      "providerVersion": null,
+      "recordRef": {
+        "evidence": 0,
+        "order": 0
+      },
+      "status": "none",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-09-21T14:13:20.000Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "runtime"
+      },
+      "actorKey": "runtime",
+      "attributes": {},
+      "completeness": {
+        "actor": {
+          "state": "captured"
+        },
+        "model": {
+          "state": "captured"
+        },
+        "timestamp": {
+          "state": "captured"
+        },
+        "tokens": {
+          "state": "captured"
+        }
+      },
+      "kind": "model.usage",
+      "payload": {
+        "cacheWriteInputTokens": 300,
+        "cachedInputTokens": 1000,
+        "costUsdEstimate": 0.0123,
+        "inputTokens": 1500,
+        "model": "fake-model",
+        "outputTokens": 200,
+        "reasoningOutputTokens": 50,
+        "scope": "session"
+      },
+      "pointer": "/info/tokens",
+      "providerVersion": null,
+      "recordRef": {
+        "evidence": 0,
+        "order": 0
+      },
+      "status": "none",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-09-21T14:14:20.000Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "user"
+      },
+      "actorKey": "user",
+      "attributes": {},
+      "completeness": {
+        "actor": {
+          "state": "captured"
+        },
+        "content": {
+          "state": "captured"
+        },
+        "timestamp": {
+          "state": "captured"
+        }
+      },
+      "kind": "turn.started",
+      "payload": {
+        "prompt": {
+          "byteLength": 101,
+          "encoding": "utf8",
+          "retention": "hash-only",
+          "sha256": "98b09d12373fe058fa06b1fa543490cc7fb04b99e8e222f8c06b34f557ff8eb2"
+        }
+      },
+      "pointer": "/parts/0",
+      "providerVersion": null,
+      "recordRef": {
+        "evidence": 1,
+        "order": 1
+      },
+      "status": "none",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-09-21T14:13:20.000Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "agent"
+      },
+      "actorKey": "root",
+      "attributes": {
+        "opencode.part_type": "text"
+      },
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "content": {
+          "state": "captured"
+        },
+        "internalReasoning": {
+          "reason": "provider-does-not-expose",
+          "state": "unavailable"
+        },
+        "timestamp": {
+          "reason": "missing-in-record",
+          "state": "partial"
+        }
+      },
+      "kind": "message.observed",
+      "payload": {
+        "channel": "text",
+        "content": {
+          "byteLength": 47,
+          "encoding": "utf8",
+          "retention": "hash-only",
+          "sha256": "a95aa8abc0f6b87fedde4aa0a910fb56986af374e53d247a905a79f16791b98a"
+        },
+        "role": "assistant"
+      },
+      "pointer": "/parts/0",
+      "providerVersion": null,
+      "recordRef": {
+        "evidence": 2,
+        "order": 2
+      },
+      "status": "none",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-09-21T14:13:20.001Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "agent"
+      },
+      "actorKey": "root",
+      "attributes": {
+        "opencode.part_type": "tool",
+        "opencode.tool_status": "completed"
+      },
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "inputs": {
+          "state": "captured"
+        },
+        "outputs": {
+          "state": "unknown"
+        },
+        "timestamp": {
+          "state": "captured"
+        }
+      },
+      "correlation": {
+        "anchor": "c1"
+      },
+      "kind": "tool.requested",
+      "payload": {
+        "input": {
+          "byteLength": 59,
+          "encoding": "jcs-json",
+          "retention": "hash-only",
+          "sha256": "a61ca566afef767c8254b045a71c891853de4088a76870fd1987153ccad49793"
+        },
+        "toolCallId": "c1",
+        "toolName": "bash<script>\u001b[31m‮",
+        "toolNamespace": "unknown"
+      },
+      "pointer": "/parts/1",
+      "providerVersion": null,
+      "recordRef": {
+        "evidence": 2,
+        "order": 2
+      },
+      "status": "none",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-09-21T14:13:20.001Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "agent"
+      },
+      "actorKey": "root",
+      "attributes": {
+        "opencode.part_type": "tool",
+        "opencode.tool_status": "completed"
+      },
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "causality": {
+          "state": "captured"
+        },
+        "inputs": {
+          "state": "unknown"
+        },
+        "outputs": {
+          "state": "captured"
+        },
+        "timestamp": {
+          "state": "captured"
+        }
+      },
+      "correlation": {
+        "refs": [
+          {
+            "key": "c1",
+            "rel": "result-of"
+          }
+        ]
+      },
+      "kind": "tool.completed",
+      "payload": {
+        "durationMs": 1,
+        "output": {
+          "byteLength": 57,
+          "encoding": "utf8",
+          "retention": "hash-only",
+          "sha256": "1bb7c8b981b9830a7b0098d5a4cb2283ef2eda3ee31926f4de50db96fba1e585"
+        },
+        "toolCallId": "c1",
+        "toolName": "bash<script>\u001b[31m‮"
+      },
+      "pointer": "/parts/1/state",
+      "providerVersion": null,
+      "recordRef": {
+        "evidence": 2,
+        "order": 2
+      },
+      "status": "success",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-09-21T14:13:20.002Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "agent"
+      },
+      "actorKey": "root",
+      "attributes": {
+        "opencode.part_type": "tool",
+        "opencode.tool_status": "completed"
+      },
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "inputs": {
+          "state": "captured"
+        },
+        "outputs": {
+          "state": "unknown"
+        },
+        "timestamp": {
+          "state": "captured"
+        }
+      },
+      "correlation": {
+        "anchor": "c2"
+      },
+      "kind": "tool.requested",
+      "payload": {
+        "input": {
+          "byteLength": 45,
+          "encoding": "jcs-json",
+          "retention": "hash-only",
+          "sha256": "cd4f09a1416265afce7d00ae363b26c30f3dd5cfcd4e40a1e9d92683504fa399"
+        },
+        "toolCallId": "c2",
+        "toolName": "write",
+        "toolNamespace": "builtin"
+      },
+      "pointer": "/parts/2",
+      "providerVersion": null,
+      "recordRef": {
+        "evidence": 2,
+        "order": 2
+      },
+      "status": "none",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-09-21T14:13:20.001Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "agent"
+      },
+      "actorKey": "root",
+      "attributes": {
+        "opencode.part_type": "tool",
+        "opencode.tool_status": "completed"
+      },
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "causality": {
+          "state": "captured"
+        },
+        "inputs": {
+          "state": "unknown"
+        },
+        "outputs": {
+          "state": "captured"
+        },
+        "timestamp": {
+          "state": "captured"
+        }
+      },
+      "correlation": {
+        "refs": [
+          {
+            "key": "c2",
+            "rel": "result-of"
+          }
+        ]
+      },
+      "kind": "tool.completed",
+      "payload": {
+        "durationMs": 1,
+        "output": {
+          "byteLength": 2,
+          "encoding": "utf8",
+          "retention": "hash-only",
+          "sha256": "2689367b205c16ce32ed4200942b8b8b1e262dfc70d9bc9fbc77c49699a4f1df"
+        },
+        "toolCallId": "c2",
+        "toolName": "write"
+      },
+      "pointer": "/parts/2/state",
+      "providerVersion": null,
+      "recordRef": {
+        "evidence": 2,
+        "order": 2
+      },
+      "status": "success",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-09-21T14:13:20.002Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "agent"
+      },
+      "actorKey": "root",
+      "attributes": {
+        "opencode.part_type": "tool",
+        "opencode.tool_status": "completed"
+      },
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "timestamp": {
+          "state": "captured"
+        }
+      },
+      "kind": "file.changed",
+      "payload": {
+        "basis": "derived-from-tool-result",
+        "changeKind": "update",
+        "diff": null,
+        "path": "../../etc/passwd",
+        "viaToolCallId": "c2"
+      },
+      "pointer": "/parts/2/state/input/filePath",
+      "providerVersion": null,
+      "recordRef": {
+        "evidence": 2,
+        "order": 2
+      },
+      "status": "success",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-09-21T14:13:20.002Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "agent"
+      },
+      "actorKey": "root",
+      "attributes": {
+        "opencode.part_type": "patch"
+      },
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "timestamp": {
+          "reason": "missing-in-record",
+          "state": "partial"
+        }
+      },
+      "kind": "file.changed",
+      "payload": {
+        "basis": "provider-reported",
+        "changeKind": "unknown",
+        "diff": null,
+        "path": "/etc/shadow",
+        "viaToolCallId": null
+      },
+      "pointer": "/parts/3/files/0",
+      "providerVersion": null,
+      "recordRef": {
+        "evidence": 2,
+        "order": 2
+      },
+      "status": "success",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-09-21T14:13:20.002Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "agent"
+      },
+      "actorKey": "root",
+      "attributes": {
+        "opencode.part_type": "patch"
+      },
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "timestamp": {
+          "reason": "missing-in-record",
+          "state": "partial"
+        }
+      },
+      "kind": "file.changed",
+      "payload": {
+        "basis": "provider-reported",
+        "changeKind": "unknown",
+        "diff": null,
+        "path": "../../x",
+        "viaToolCallId": null
+      },
+      "pointer": "/parts/3/files/1",
+      "providerVersion": null,
+      "recordRef": {
+        "evidence": 2,
+        "order": 2
+      },
+      "status": "success",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-09-21T14:13:20.002Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "unknown"
+      },
+      "actorKey": "root",
+      "attributes": {},
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "timestamp": {
+          "state": "captured"
+        }
+      },
+      "kind": "source.unknown",
+      "payload": {
+        "nativeType": "tool",
+        "recordSha256": "5810a0c01e3c59fd8333844b208a26a795161b1d85a343a7f6c70422f08387fa",
+        "topLevelKeys": [
+          "callID",
+          "id",
+          "messageID",
+          "sessionID",
+          "state",
+          "tool",
+          "type"
+        ]
+      },
+      "pointer": "/parts/4",
+      "providerVersion": null,
+      "recordRef": {
+        "evidence": 2,
+        "order": 2
+      },
+      "status": "none",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-09-21T14:13:20.001Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "unknown"
+      },
+      "actorKey": "root",
+      "attributes": {},
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "timestamp": {
+          "state": "captured"
+        }
+      },
+      "kind": "source.unknown",
+      "payload": {
+        "nativeType": "reasoning",
+        "recordSha256": "5810a0c01e3c59fd8333844b208a26a795161b1d85a343a7f6c70422f08387fa",
+        "topLevelKeys": [
+          "id",
+          "messageID",
+          "sessionID",
+          "text",
+          "time",
+          "type"
+        ]
+      },
+      "pointer": "/parts/5",
+      "providerVersion": null,
+      "recordRef": {
+        "evidence": 2,
+        "order": 2
+      },
+      "status": "none",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-09-21T14:13:20.001Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "agent"
+      },
+      "actorKey": "root",
+      "attributes": {
+        "opencode.finish_reason": "other"
+      },
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "model": {
+          "state": "captured"
+        },
+        "timestamp": {
+          "state": "captured"
+        },
+        "tokens": {
+          "reason": "missing-in-record",
+          "state": "absent"
+        }
+      },
+      "kind": "model.usage",
+      "payload": {
+        "model": "m<b>",
+        "scope": "message"
+      },
+      "pointer": "/parts/6",
+      "providerVersion": null,
+      "recordRef": {
+        "evidence": 2,
+        "order": 2
+      },
+      "status": "none",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-09-21T14:13:20.002Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "unknown"
+      },
+      "actorKey": "root",
+      "attributes": {},
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "timestamp": {
+          "state": "captured"
+        }
+      },
+      "kind": "source.unknown",
+      "payload": {
+        "nativeType": null,
+        "recordSha256": "5810a0c01e3c59fd8333844b208a26a795161b1d85a343a7f6c70422f08387fa",
+        "topLevelKeys": []
+      },
+      "pointer": "/parts/7",
+      "providerVersion": null,
+      "recordRef": {
+        "evidence": 2,
+        "order": 2
+      },
+      "status": "none",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-09-21T14:13:20.001Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "unknown"
+      },
+      "actorKey": "root",
+      "attributes": {},
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "timestamp": {
+          "state": "captured"
+        }
+      },
+      "kind": "source.unknown",
+      "payload": {
+        "nativeType": null,
+        "recordSha256": "5810a0c01e3c59fd8333844b208a26a795161b1d85a343a7f6c70422f08387fa",
+        "topLevelKeys": []
+      },
+      "pointer": "/parts/8",
+      "providerVersion": null,
+      "recordRef": {
+        "evidence": 2,
+        "order": 2
+      },
+      "status": "none",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-09-21T14:13:20.001Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "unknown"
+      },
+      "actorKey": "root",
+      "attributes": {},
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "timestamp": {
+          "state": "captured"
+        }
+      },
+      "kind": "source.unknown",
+      "payload": {
+        "nativeType": null,
+        "recordSha256": "5810a0c01e3c59fd8333844b208a26a795161b1d85a343a7f6c70422f08387fa",
+        "topLevelKeys": [
+          "type"
+        ]
+      },
+      "pointer": "/parts/9",
+      "providerVersion": null,
+      "recordRef": {
+        "evidence": 2,
+        "order": 2
+      },
+      "status": "none",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-09-21T14:13:20.001Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "agent"
+      },
+      "actorKey": "root",
+      "attributes": {
+        "opencode.part_type": "text"
+      },
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "content": {
+          "state": "captured"
+        },
+        "internalReasoning": {
+          "reason": "provider-does-not-expose",
+          "state": "unavailable"
+        },
+        "timestamp": {
+          "reason": "missing-in-record",
+          "state": "partial"
+        }
+      },
+      "kind": "message.observed",
+      "payload": {
+        "channel": "text",
+        "content": {
+          "byteLength": 5,
+          "encoding": "utf8",
+          "retention": "hash-only",
+          "sha256": "1cafa6d851c65817d04c841673d025dcf4ed498435407058d3a36608d17e32b6"
+        },
+        "role": "assistant"
+      },
+      "pointer": "/parts/0",
+      "providerVersion": null,
+      "recordRef": {
+        "evidence": 3,
+        "order": 3
+      },
+      "status": "none",
+      "time": {
+        "origin": "source",
+        "status": "invalid",
+        "value": null
+      }
+    },
+    {
+      "actor": {
+        "role": "unknown"
+      },
+      "actorKey": "root",
+      "attributes": {},
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "timestamp": {
+          "reason": "missing-in-record",
+          "state": "absent"
+        }
+      },
+      "kind": "source.unknown",
+      "payload": {
+        "nativeType": "assistant",
+        "recordSha256": "33916c19ee264c6e28c99b9a9adfcc568aa9e78325de91221519205c798f93bc",
+        "topLevelKeys": [
+          "info",
+          "parts"
+        ]
+      },
+      "pointer": "/parts",
+      "providerVersion": null,
+      "recordRef": {
+        "evidence": 4,
+        "order": 4
+      },
+      "status": "none",
+      "time": {
+        "origin": "none",
+        "status": "missing",
+        "value": null
+      }
+    },
+    {
+      "actor": {
+        "role": "unknown"
+      },
+      "actorKey": "root",
+      "attributes": {},
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "timestamp": {
+          "reason": "missing-in-record",
+          "state": "absent"
+        }
+      },
+      "kind": "source.unknown",
+      "payload": {
+        "nativeType": null,
+        "recordSha256": "ede976d9b85df6acef8406180a88cee4ac571ca03a0c4d9f85302029e981067c",
+        "topLevelKeys": []
+      },
+      "pointer": "",
+      "providerVersion": null,
+      "recordRef": {
+        "evidence": 5,
+        "order": 5
+      },
+      "status": "none",
+      "time": {
+        "origin": "none",
+        "status": "missing",
+        "value": null
+      }
+    },
+    {
+      "actor": {
+        "role": "unknown"
+      },
+      "actorKey": "root",
+      "attributes": {},
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "timestamp": {
+          "reason": "missing-in-record",
+          "state": "absent"
+        }
+      },
+      "kind": "source.unknown",
+      "payload": {
+        "nativeType": null,
+        "recordSha256": "2984fcfb8b512b46d868887592c8701cff0de2cd7ab6988d17f28ae499b371ba",
+        "topLevelKeys": [
+          "info",
+          "parts"
+        ]
+      },
+      "pointer": "",
+      "providerVersion": null,
+      "recordRef": {
+        "evidence": 6,
+        "order": 6
+      },
+      "status": "none",
+      "time": {
+        "origin": "none",
+        "status": "missing",
+        "value": null
+      }
+    }
+  ],
+  "warnings": [
+    {
+      "code": "unknown-record-type",
+      "detail": {
+        "reasonCode": "oc.malformed-part"
+      },
+      "severity": "warn",
+      "sourceSequence": 2
+    },
+    {
+      "code": "unknown-record-type",
+      "detail": {
+        "reasonCode": "oc.malformed-part"
+      },
+      "severity": "warn",
+      "sourceSequence": 2
+    },
+    {
+      "code": "unknown-record-type",
+      "detail": {
+        "reasonCode": "oc.unknown-shape"
+      },
+      "severity": "warn",
+      "sourceSequence": 2
+    },
+    {
+      "code": "unknown-record-type",
+      "detail": {
+        "reasonCode": "oc.unknown-shape"
+      },
+      "severity": "warn",
+      "sourceSequence": 2
+    },
+    {
+      "code": "unknown-record-type",
+      "detail": {
+        "reasonCode": "oc.unknown-shape"
+      },
+      "severity": "warn",
+      "sourceSequence": 2
+    },
+    {
+      "code": "unknown-record-type",
+      "detail": {
+        "reasonCode": "oc.unknown-shape"
+      },
+      "severity": "warn",
+      "sourceSequence": 4
+    },
+    {
+      "code": "unknown-record-type",
+      "detail": {
+        "reasonCode": "oc.unknown-shape"
+      },
+      "severity": "warn",
+      "sourceSequence": 5
+    },
+    {
+      "code": "unknown-record-type",
+      "detail": {
+        "reasonCode": "oc.unknown-shape"
+      },
+      "severity": "warn",
+      "sourceSequence": 6
+    },
+    {
+      "code": "unmapped-field",
+      "detail": {
+        "fieldCode": "oc.session-info-fields",
+        "occurrences": 1
+      },
+      "severity": "info",
+      "sourceSequence": null
+    }
+  ]
+}

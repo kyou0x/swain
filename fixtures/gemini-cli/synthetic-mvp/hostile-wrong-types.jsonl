@@ -1,0 +1,11 @@
+{"sessionId":"a1b2c3d4-0000-4000-8000-000000000001","projectHash":"0000000000000000000000000000000000000000000000000000000000000000","startTime":"2026-11-15T10:30:00.000Z","lastUpdated":"2026-11-15T10:30:00.000Z"}
+{"id":"11111111-0000-4000-8000-000000000001","timestamp":12345,"type":"user","content":42}
+{"id":"11111111-0000-4000-8000-000000000002","timestamp":"2026-11-15T10:30:06.000Z","type":"gemini","content":{"text":"single part object"},"toolCalls":"nope","thoughts":{"a":1},"tokens":"many","model":7}
+{"id":"11111111-0000-4000-8000-000000000003","timestamp":"2026-11-15T10:30:07.000Z","type":"gemini","content":"t","toolCalls":[null,5,{"name":3},{"id":9,"name":"read_file","args":[1],"status":4,"timestamp":false,"result":null}],"thoughts":[null,"x",{"subject":1}],"tokens":{"input":"1","output":-5,"cached":1.5,"total":1e999},"model":"m"}
+{"id":4,"type":"user","content":"numeric id is not a message record"}
+[1,2,3]
+"bare string"
+7
+null
+{"id":"11111111-0000-4000-8000-000000000005","type":"user"}
+{"$set":{"messages":[{"id":"x"}]}}

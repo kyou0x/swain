@@ -1,0 +1,44 @@
+{
+  "resourceSpans": [
+    {
+      "resource": {
+        "attributes": [
+          {
+            "key": "service.name",
+            "value": {
+              "stringValue": "<script>alert(1)</script>"
+            }
+          }
+        ]
+      },
+      "scopeSpans": [
+        {
+          "scope": {
+            "name": "javascript:alert(1)"
+          },
+          "spans": [
+            {
+              "traceId": "5b8efff798038103d269b633813fc60c",
+              "spanId": "00f067aa0ba902b7",
+              "name": "<script>alert(1)</script>‮\u0007evil",
+              "attributes": [
+                {
+                  "key": "<img src=x onerror=alert(1)>",
+                  "value": {
+                    "stringValue": "javascript:alert(1)"
+                  }
+                },
+                {
+                  "key": "‮key",
+                  "value": {
+                    "stringValue": "\u0000\u001b[31mred"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

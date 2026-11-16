@@ -1,0 +1,1212 @@
+{
+  "dispositions": [
+    {
+      "into": 0,
+      "kind": "metadata",
+      "sourceSequence": 4
+    }
+  ],
+  "drafts": [
+    {
+      "actor": {
+        "role": "runtime"
+      },
+      "actorKey": "runtime",
+      "attributes": {
+        "opencode.cwd": "/home/user/project"
+      },
+      "completeness": {
+        "actor": {
+          "state": "captured"
+        },
+        "timestamp": {
+          "state": "captured"
+        }
+      },
+      "kind": "session.started",
+      "nativeSessionId": "ses_fake01",
+      "payload": {
+        "nativeSessionId": "ses_fake01",
+        "trigger": "unknown"
+      },
+      "pointer": "/info",
+      "providerVersion": "1.19.5",
+      "recordRef": {
+        "evidence": 0,
+        "order": 0
+      },
+      "status": "none",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-09-21T14:13:20.000Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "runtime"
+      },
+      "actorKey": "runtime",
+      "attributes": {},
+      "completeness": {
+        "actor": {
+          "state": "captured"
+        },
+        "model": {
+          "state": "captured"
+        },
+        "timestamp": {
+          "state": "captured"
+        },
+        "tokens": {
+          "state": "captured"
+        }
+      },
+      "kind": "model.usage",
+      "payload": {
+        "cacheWriteInputTokens": 300,
+        "cachedInputTokens": 1000,
+        "costUsdEstimate": 0.0123,
+        "inputTokens": 1500,
+        "model": "fake-model",
+        "outputTokens": 200,
+        "reasoningOutputTokens": 50,
+        "scope": "session"
+      },
+      "pointer": "/info/tokens",
+      "providerVersion": "1.19.5",
+      "recordRef": {
+        "evidence": 0,
+        "order": 0
+      },
+      "status": "none",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-09-21T14:14:20.000Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "user"
+      },
+      "actorKey": "user",
+      "attributes": {},
+      "completeness": {
+        "actor": {
+          "state": "captured"
+        },
+        "content": {
+          "state": "captured"
+        },
+        "timestamp": {
+          "state": "captured"
+        }
+      },
+      "kind": "turn.started",
+      "payload": {
+        "prompt": {
+          "byteLength": 47,
+          "encoding": "utf8",
+          "retention": "hash-only",
+          "sha256": "44b161838f9b29a6101b8c1649037c29ce0956bbb7d11e76168b50df35d919fd"
+        }
+      },
+      "pointer": "/parts/0",
+      "providerVersion": "1.19.5",
+      "recordRef": {
+        "evidence": 1,
+        "order": 1
+      },
+      "status": "none",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-09-21T14:13:20.000Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "subagent"
+      },
+      "actorKey": "native:prt_user01e",
+      "attributes": {
+        "opencode.part_type": "subtask"
+      },
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "timestamp": {
+          "reason": "missing-in-record",
+          "state": "partial"
+        }
+      },
+      "kind": "agent.started",
+      "payload": {
+        "agentActorId": "native:prt_user01e",
+        "agentType": "reviewer",
+        "parentActorId": "root",
+        "spawnedByToolCallId": null
+      },
+      "pointer": "/parts/4",
+      "providerVersion": "1.19.5",
+      "recordRef": {
+        "evidence": 1,
+        "order": 1
+      },
+      "status": "none",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-09-21T14:13:20.000Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "agent"
+      },
+      "actorKey": "root",
+      "attributes": {
+        "opencode.part_type": "reasoning"
+      },
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "content": {
+          "state": "captured"
+        },
+        "internalReasoning": {
+          "reason": "provider-does-not-expose",
+          "state": "unavailable"
+        },
+        "timestamp": {
+          "state": "captured"
+        }
+      },
+      "kind": "message.observed",
+      "payload": {
+        "channel": "reasoning",
+        "content": {
+          "byteLength": 56,
+          "encoding": "utf8",
+          "retention": "hash-only",
+          "sha256": "9f3df6841d0c8f30e8ee96a715887320e4e2e0f917244e5b389a491c27466eef"
+        },
+        "role": "assistant"
+      },
+      "pointer": "/parts/1",
+      "providerVersion": "1.19.5",
+      "recordRef": {
+        "evidence": 2,
+        "order": 2
+      },
+      "status": "none",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-09-21T14:13:21.100Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "agent"
+      },
+      "actorKey": "root",
+      "attributes": {
+        "opencode.part_type": "text"
+      },
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "content": {
+          "state": "captured"
+        },
+        "internalReasoning": {
+          "reason": "provider-does-not-expose",
+          "state": "unavailable"
+        },
+        "timestamp": {
+          "state": "captured"
+        }
+      },
+      "kind": "message.observed",
+      "payload": {
+        "channel": "text",
+        "content": {
+          "byteLength": 22,
+          "encoding": "utf8",
+          "retention": "hash-only",
+          "sha256": "b7dcf593c242b710e52c4db533b9e485ebd5f3573bce8207e23f2aeadb5a1122"
+        },
+        "role": "assistant"
+      },
+      "pointer": "/parts/2",
+      "providerVersion": "1.19.5",
+      "recordRef": {
+        "evidence": 2,
+        "order": 2
+      },
+      "status": "none",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-09-21T14:13:22.100Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "agent"
+      },
+      "actorKey": "root",
+      "attributes": {
+        "opencode.part_type": "tool",
+        "opencode.tool_status": "completed"
+      },
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "inputs": {
+          "state": "captured"
+        },
+        "outputs": {
+          "state": "unknown"
+        },
+        "timestamp": {
+          "state": "captured"
+        }
+      },
+      "correlation": {
+        "anchor": "call_fake01"
+      },
+      "kind": "tool.requested",
+      "payload": {
+        "input": {
+          "byteLength": 97,
+          "encoding": "jcs-json",
+          "retention": "hash-only",
+          "sha256": "93ce0d7e577ad679552f93a13708108d48bfe15ce54cbc91aa26e308881e84fd"
+        },
+        "toolCallId": "call_fake01",
+        "toolName": "edit",
+        "toolNamespace": "builtin"
+      },
+      "pointer": "/parts/3",
+      "providerVersion": "1.19.5",
+      "recordRef": {
+        "evidence": 2,
+        "order": 2
+      },
+      "status": "none",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-09-21T14:13:23.000Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "agent"
+      },
+      "actorKey": "root",
+      "attributes": {
+        "opencode.part_type": "tool",
+        "opencode.tool_status": "completed"
+      },
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "causality": {
+          "state": "captured"
+        },
+        "inputs": {
+          "state": "unknown"
+        },
+        "outputs": {
+          "state": "captured"
+        },
+        "timestamp": {
+          "state": "captured"
+        }
+      },
+      "correlation": {
+        "refs": [
+          {
+            "key": "call_fake01",
+            "rel": "result-of"
+          }
+        ]
+      },
+      "kind": "tool.completed",
+      "payload": {
+        "durationMs": 200,
+        "output": {
+          "byteLength": 26,
+          "encoding": "utf8",
+          "retention": "hash-only",
+          "sha256": "8caec1349d76de16c89d9b64f22a46c79f641ab12a2540c8d2433217dac59f07"
+        },
+        "toolCallId": "call_fake01",
+        "toolName": "edit"
+      },
+      "pointer": "/parts/3/state",
+      "providerVersion": "1.19.5",
+      "recordRef": {
+        "evidence": 2,
+        "order": 2
+      },
+      "status": "success",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-09-21T14:13:23.200Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "agent"
+      },
+      "actorKey": "root",
+      "attributes": {
+        "opencode.part_type": "tool",
+        "opencode.tool_status": "completed"
+      },
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "inputs": {
+          "state": "captured"
+        },
+        "outputs": {
+          "state": "unknown"
+        },
+        "timestamp": {
+          "state": "captured"
+        }
+      },
+      "correlation": {
+        "anchor": "call_fake02"
+      },
+      "kind": "tool.requested",
+      "payload": {
+        "input": {
+          "byteLength": 53,
+          "encoding": "jcs-json",
+          "retention": "hash-only",
+          "sha256": "b7efbdf2192e0d8daf381a1c8c535bb596a971429f4b1990f4f107f74b8f84c7"
+        },
+        "toolCallId": "call_fake02",
+        "toolName": "bash",
+        "toolNamespace": "builtin"
+      },
+      "pointer": "/parts/4",
+      "providerVersion": "1.19.5",
+      "recordRef": {
+        "evidence": 2,
+        "order": 2
+      },
+      "status": "none",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-09-21T14:13:24.000Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "agent"
+      },
+      "actorKey": "root",
+      "attributes": {
+        "opencode.part_type": "tool",
+        "opencode.tool_status": "completed"
+      },
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "causality": {
+          "state": "captured"
+        },
+        "inputs": {
+          "state": "unknown"
+        },
+        "outputs": {
+          "state": "captured"
+        },
+        "timestamp": {
+          "state": "captured"
+        }
+      },
+      "correlation": {
+        "refs": [
+          {
+            "key": "call_fake02",
+            "rel": "result-of"
+          }
+        ]
+      },
+      "kind": "tool.completed",
+      "payload": {
+        "durationMs": 5000,
+        "exitCode": 0,
+        "output": {
+          "byteLength": 54,
+          "encoding": "utf8",
+          "retention": "hash-only",
+          "sha256": "bf048bdea4f8280d61b93792a4bd7f18a71f2eee9a3e3e8e514978e8e924900b"
+        },
+        "toolCallId": "call_fake02",
+        "toolName": "bash"
+      },
+      "pointer": "/parts/4/state",
+      "providerVersion": "1.19.5",
+      "recordRef": {
+        "evidence": 2,
+        "order": 2
+      },
+      "status": "success",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-09-21T14:13:29.000Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "agent"
+      },
+      "actorKey": "root",
+      "attributes": {
+        "opencode.part_type": "tool",
+        "opencode.tool_status": "error"
+      },
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "inputs": {
+          "state": "captured"
+        },
+        "outputs": {
+          "state": "unknown"
+        },
+        "timestamp": {
+          "state": "captured"
+        }
+      },
+      "correlation": {
+        "anchor": "call_fake03"
+      },
+      "kind": "tool.requested",
+      "payload": {
+        "input": {
+          "byteLength": 45,
+          "encoding": "jcs-json",
+          "retention": "hash-only",
+          "sha256": "2225cb3b77cdbe6514dcd85048b2ba71348d603d6fb61df2d43b8e449329f4f1"
+        },
+        "toolCallId": "call_fake03",
+        "toolName": "read",
+        "toolNamespace": "builtin"
+      },
+      "pointer": "/parts/5",
+      "providerVersion": "1.19.5",
+      "recordRef": {
+        "evidence": 2,
+        "order": 2
+      },
+      "status": "none",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-09-21T14:13:30.000Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "agent"
+      },
+      "actorKey": "root",
+      "attributes": {
+        "opencode.part_type": "tool",
+        "opencode.tool_status": "error"
+      },
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "causality": {
+          "state": "captured"
+        },
+        "inputs": {
+          "state": "unknown"
+        },
+        "outputs": {
+          "state": "captured"
+        },
+        "timestamp": {
+          "state": "captured"
+        }
+      },
+      "correlation": {
+        "refs": [
+          {
+            "key": "call_fake03",
+            "rel": "result-of"
+          }
+        ]
+      },
+      "kind": "tool.failed",
+      "payload": {
+        "durationMs": 50,
+        "error": {
+          "byteLength": 46,
+          "encoding": "utf8",
+          "retention": "hash-only",
+          "sha256": "eb52e36c3c779c573fdc270a7fc93e04f1d38f3d369beac548316efad37fd916"
+        },
+        "errorClass": "error",
+        "output": null,
+        "toolCallId": "call_fake03",
+        "toolName": "read"
+      },
+      "pointer": "/parts/5/state",
+      "providerVersion": "1.19.5",
+      "recordRef": {
+        "evidence": 2,
+        "order": 2
+      },
+      "status": "failure",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-09-21T14:13:30.050Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "agent"
+      },
+      "actorKey": "root",
+      "attributes": {
+        "opencode.part_type": "tool",
+        "opencode.tool_status": "pending"
+      },
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "inputs": {
+          "state": "captured"
+        },
+        "outputs": {
+          "state": "unknown"
+        },
+        "timestamp": {
+          "reason": "missing-in-record",
+          "state": "partial"
+        }
+      },
+      "correlation": {
+        "anchor": "call_fake04"
+      },
+      "kind": "tool.requested",
+      "payload": {
+        "input": {
+          "byteLength": 2,
+          "encoding": "jcs-json",
+          "retention": "hash-only",
+          "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+        },
+        "toolCallId": "call_fake04",
+        "toolName": "grep",
+        "toolNamespace": "builtin"
+      },
+      "pointer": "/parts/6",
+      "providerVersion": "1.19.5",
+      "recordRef": {
+        "evidence": 2,
+        "order": 2
+      },
+      "status": "none",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-09-21T14:13:21.000Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "agent"
+      },
+      "actorKey": "root",
+      "attributes": {
+        "opencode.part_type": "tool",
+        "opencode.tool_status": "running"
+      },
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "inputs": {
+          "state": "captured"
+        },
+        "outputs": {
+          "state": "unknown"
+        },
+        "timestamp": {
+          "state": "captured"
+        }
+      },
+      "correlation": {
+        "anchor": "call_fake05"
+      },
+      "kind": "tool.requested",
+      "payload": {
+        "input": {
+          "byteLength": 22,
+          "encoding": "jcs-json",
+          "retention": "hash-only",
+          "sha256": "8e7a6ad5b73f19bd260db2a114498d60ee15d88e8e6f996bee7c1a57df384ee2"
+        },
+        "toolCallId": "call_fake05",
+        "toolName": "glob",
+        "toolNamespace": "builtin"
+      },
+      "pointer": "/parts/7",
+      "providerVersion": "1.19.5",
+      "recordRef": {
+        "evidence": 2,
+        "order": 2
+      },
+      "status": "none",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-09-21T14:13:31.000Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "agent"
+      },
+      "actorKey": "root",
+      "attributes": {
+        "opencode.part_type": "tool",
+        "opencode.tool_status": "completed"
+      },
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "inputs": {
+          "state": "captured"
+        },
+        "outputs": {
+          "state": "unknown"
+        },
+        "timestamp": {
+          "state": "captured"
+        }
+      },
+      "correlation": {
+        "anchor": "call_fake06"
+      },
+      "kind": "tool.requested",
+      "payload": {
+        "input": {
+          "byteLength": 55,
+          "encoding": "jcs-json",
+          "retention": "hash-only",
+          "sha256": "49b55e802b478171ba1675cd9cad75121f9a065ff5ffd176a0e0e039ac2ee095"
+        },
+        "toolCallId": "call_fake06",
+        "toolName": "write",
+        "toolNamespace": "builtin"
+      },
+      "pointer": "/parts/8",
+      "providerVersion": "1.19.5",
+      "recordRef": {
+        "evidence": 2,
+        "order": 2
+      },
+      "status": "none",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-09-21T14:13:32.000Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "agent"
+      },
+      "actorKey": "root",
+      "attributes": {
+        "opencode.part_type": "tool",
+        "opencode.tool_status": "completed"
+      },
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "causality": {
+          "state": "captured"
+        },
+        "inputs": {
+          "state": "unknown"
+        },
+        "outputs": {
+          "state": "captured"
+        },
+        "timestamp": {
+          "state": "captured"
+        }
+      },
+      "correlation": {
+        "refs": [
+          {
+            "key": "call_fake06",
+            "rel": "result-of"
+          }
+        ]
+      },
+      "kind": "tool.completed",
+      "payload": {
+        "durationMs": 100,
+        "output": {
+          "byteLength": 24,
+          "encoding": "utf8",
+          "retention": "hash-only",
+          "sha256": "e3e06ec0f8c958669ed3682941ab88218ff9ee42a7ab9b48fd78126336aa968c"
+        },
+        "toolCallId": "call_fake06",
+        "toolName": "write"
+      },
+      "pointer": "/parts/8/state",
+      "providerVersion": "1.19.5",
+      "recordRef": {
+        "evidence": 2,
+        "order": 2
+      },
+      "status": "success",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-09-21T14:13:32.100Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "agent"
+      },
+      "actorKey": "root",
+      "attributes": {
+        "opencode.part_type": "tool",
+        "opencode.tool_status": "completed"
+      },
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "timestamp": {
+          "state": "captured"
+        }
+      },
+      "kind": "file.changed",
+      "payload": {
+        "basis": "derived-from-tool-result",
+        "changeKind": "add",
+        "diff": null,
+        "path": "/home/user/project/new.txt",
+        "viaToolCallId": "call_fake06"
+      },
+      "pointer": "/parts/8/state/input/filePath",
+      "providerVersion": "1.19.5",
+      "recordRef": {
+        "evidence": 2,
+        "order": 2
+      },
+      "status": "success",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-09-21T14:13:32.100Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "agent"
+      },
+      "actorKey": "root",
+      "attributes": {
+        "opencode.finish_reason": "stop"
+      },
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "model": {
+          "state": "captured"
+        },
+        "timestamp": {
+          "state": "captured"
+        },
+        "tokens": {
+          "state": "captured"
+        }
+      },
+      "kind": "model.usage",
+      "payload": {
+        "cacheWriteInputTokens": 300,
+        "cachedInputTokens": 1000,
+        "costUsdEstimate": 0.0123,
+        "inputTokens": 1500,
+        "model": "fake-model",
+        "outputTokens": 200,
+        "reasoningOutputTokens": 50,
+        "scope": "message",
+        "totalTokens": 1750
+      },
+      "pointer": "/parts/9",
+      "providerVersion": "1.19.5",
+      "recordRef": {
+        "evidence": 2,
+        "order": 2
+      },
+      "status": "none",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-09-21T14:14:19.000Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "agent"
+      },
+      "actorKey": "root",
+      "attributes": {
+        "opencode.part_type": "patch"
+      },
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "timestamp": {
+          "reason": "missing-in-record",
+          "state": "partial"
+        }
+      },
+      "kind": "file.changed",
+      "payload": {
+        "basis": "provider-reported",
+        "changeKind": "unknown",
+        "diff": null,
+        "path": "/home/user/project/greeting.txt",
+        "viaToolCallId": null
+      },
+      "pointer": "/parts/10/files/0",
+      "providerVersion": "1.19.5",
+      "recordRef": {
+        "evidence": 2,
+        "order": 2
+      },
+      "status": "success",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-09-21T14:14:19.000Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "runtime"
+      },
+      "actorKey": "runtime",
+      "attributes": {
+        "opencode.part_type": "retry",
+        "opencode.retry_attempt": 2
+      },
+      "completeness": {
+        "actor": {
+          "state": "captured"
+        },
+        "content": {
+          "state": "captured"
+        },
+        "internalReasoning": {
+          "reason": "provider-does-not-expose",
+          "state": "unavailable"
+        },
+        "timestamp": {
+          "state": "captured"
+        }
+      },
+      "kind": "message.observed",
+      "payload": {
+        "channel": "notification",
+        "content": {
+          "byteLength": 99,
+          "encoding": "jcs-json",
+          "retention": "hash-only",
+          "sha256": "ff21b5a3c1476607ea82766634bd8b96e14f5b5e6fdb5ae5bd68c79bac0dbd9a"
+        },
+        "role": "system"
+      },
+      "pointer": "/parts/12",
+      "providerVersion": "1.19.5",
+      "recordRef": {
+        "evidence": 2,
+        "order": 2
+      },
+      "status": "none",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-09-21T14:13:33.000Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "runtime"
+      },
+      "actorKey": "runtime",
+      "attributes": {
+        "opencode.compaction_auto": true,
+        "opencode.part_type": "compaction"
+      },
+      "completeness": {
+        "actor": {
+          "state": "captured"
+        },
+        "content": {
+          "state": "captured"
+        },
+        "internalReasoning": {
+          "reason": "provider-does-not-expose",
+          "state": "unavailable"
+        },
+        "timestamp": {
+          "reason": "missing-in-record",
+          "state": "partial"
+        }
+      },
+      "kind": "message.observed",
+      "payload": {
+        "channel": "notification",
+        "content": {
+          "byteLength": 148,
+          "encoding": "jcs-json",
+          "retention": "hash-only",
+          "sha256": "d0839b0f809762c7905f41f5803193419f05b95336e0d452d72e9ebdcf6a013f"
+        },
+        "role": "system"
+      },
+      "pointer": "/parts/13",
+      "providerVersion": "1.19.5",
+      "recordRef": {
+        "evidence": 2,
+        "order": 2
+      },
+      "status": "none",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-09-21T14:13:21.000Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "unknown"
+      },
+      "actorKey": "root",
+      "attributes": {},
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "timestamp": {
+          "state": "captured"
+        }
+      },
+      "kind": "source.unknown",
+      "payload": {
+        "nativeType": "future-part-type",
+        "recordSha256": "646f01c35bcaf0d585ea5fc72b18b23c6eee7ad6e74986cb34cd8d3403c8cbb2",
+        "topLevelKeys": [
+          "id",
+          "messageID",
+          "novel",
+          "sessionID",
+          "type"
+        ]
+      },
+      "pointer": "/parts/14",
+      "providerVersion": "1.19.5",
+      "recordRef": {
+        "evidence": 2,
+        "order": 2
+      },
+      "status": "none",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-09-21T14:13:21.000Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "runtime"
+      },
+      "actorKey": "runtime",
+      "attributes": {
+        "opencode.error_name": "MessageAbortedError"
+      },
+      "completeness": {
+        "actor": {
+          "state": "captured"
+        },
+        "content": {
+          "state": "captured"
+        },
+        "internalReasoning": {
+          "reason": "provider-does-not-expose",
+          "state": "unavailable"
+        },
+        "timestamp": {
+          "reason": "missing-in-record",
+          "state": "partial"
+        }
+      },
+      "kind": "message.observed",
+      "payload": {
+        "channel": "notification",
+        "content": {
+          "byteLength": 77,
+          "encoding": "jcs-json",
+          "retention": "hash-only",
+          "sha256": "0d6cb85d3bff0c511d63fe1e72629e83a38663c8c3706714037bcb781972da0e"
+        },
+        "role": "system"
+      },
+      "pointer": "/info/error",
+      "providerVersion": "1.19.5",
+      "recordRef": {
+        "evidence": 3,
+        "order": 3
+      },
+      "status": "none",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-09-21T14:14:20.000Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "agent"
+      },
+      "actorKey": "root",
+      "attributes": {},
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "model": {
+          "state": "captured"
+        },
+        "timestamp": {
+          "state": "captured"
+        },
+        "tokens": {
+          "state": "captured"
+        }
+      },
+      "kind": "model.usage",
+      "payload": {
+        "cacheWriteInputTokens": 0,
+        "cachedInputTokens": 0,
+        "costUsdEstimate": 0.001,
+        "inputTokens": 10,
+        "model": "fake-model",
+        "outputTokens": 2,
+        "reasoningOutputTokens": 0,
+        "scope": "message"
+      },
+      "pointer": "/info/tokens",
+      "providerVersion": "1.19.5",
+      "recordRef": {
+        "evidence": 3,
+        "order": 3
+      },
+      "status": "none",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-09-21T14:14:20.000Z"
+      }
+    }
+  ],
+  "warnings": [
+    {
+      "code": "unknown-record-type",
+      "detail": {
+        "reasonCode": "oc.unknown-shape"
+      },
+      "severity": "warn",
+      "sourceSequence": 2
+    },
+    {
+      "code": "unmapped-field",
+      "detail": {
+        "fieldCode": "oc.agent-part",
+        "occurrences": 1
+      },
+      "severity": "info",
+      "sourceSequence": null
+    },
+    {
+      "code": "unmapped-field",
+      "detail": {
+        "fieldCode": "oc.file-part",
+        "occurrences": 1
+      },
+      "severity": "info",
+      "sourceSequence": null
+    },
+    {
+      "code": "unmapped-field",
+      "detail": {
+        "fieldCode": "oc.message-fields",
+        "occurrences": 3
+      },
+      "severity": "info",
+      "sourceSequence": null
+    },
+    {
+      "code": "unmapped-field",
+      "detail": {
+        "fieldCode": "oc.session-info-fields",
+        "occurrences": 1
+      },
+      "severity": "info",
+      "sourceSequence": null
+    },
+    {
+      "code": "unmapped-field",
+      "detail": {
+        "fieldCode": "oc.snapshot-part",
+        "occurrences": 1
+      },
+      "severity": "info",
+      "sourceSequence": null
+    }
+  ]
+}

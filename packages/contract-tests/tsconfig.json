@@ -1,0 +1,17 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": { "rootDir": ".", "outDir": "dist" },
+  "include": ["test/**/*.ts"],
+  "references": [
+    { "path": "../core" },
+    { "path": "../adapter-claude-code" },
+    { "path": "../adapter-codex-cli" },
+    { "path": "../adapter-gemini-cli" },
+    { "path": "../adapter-opencode" },
+    { "path": "../report" },
+    { "path": "../store" },
+    { "path": "../cli" },
+    { "path": "../model" },
+    { "path": "../otlp" }
+  ]
+}

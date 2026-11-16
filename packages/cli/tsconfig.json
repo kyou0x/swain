@@ -1,0 +1,17 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": { "rootDir": ".", "outDir": "dist" },
+  "include": ["env.d.ts", "src/**/*.ts", "test/**/*.ts"],
+  "references": [
+    { "path": "../core" },
+    { "path": "../adapter-claude-code" },
+    { "path": "../adapter-codex-cli" },
+    { "path": "../adapter-gemini-cli" },
+    { "path": "../adapter-opencode" },
+    { "path": "../report" },
+    { "path": "../store" },
+    { "path": "../client" },
+    { "path": "../db" },
+    { "path": "../server" }
+  ]
+}

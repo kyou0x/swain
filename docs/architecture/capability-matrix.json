@@ -1,0 +1,104 @@
+{
+  "$schema": "./capability-matrix.schema.json",
+  "matrixVersion": "0.1.0",
+  "generatedFrom": "docs/research/PROVIDER-SOURCES.md (retrieved 2026-11-15 via summarizing fetch tool; field lists secondhand). No cell is fixture-verified. 'available'/'partial' mean documented or source-observed on at least one listed surface, NOT verified behavior.",
+  "rows": ["sessionLifecycle", "toolCallInputs", "toolCallOutputs", "llmMetadata", "filePatches", "subagents", "permissions", "failures", "timestamps", "tokens"],
+  "providers": {
+    "claude-code": {
+      "captureMode": "import-file of a user-captured file; source kind pending ADR-0003 (recommended: claude-code.stream-json)",
+      "importViability": "stream-json: documented interface; transcript JSONL: documented location but documented as internal and changing between versions; hooks: documented but require live capture (P3)",
+      "testedVersions": [],
+      "documentedVersionSeen": { "version": "2.1.314", "evidence": "DOCUMENTED", "source": "https://code.claude.com/docs/en/hooks (highest feature-minimum version referenced; docs name no latest version)" },
+      "localObservedVersion": { "version": "2.1.325", "evidence": "LOCAL-OBSERVED", "source": "claude --version on lead workstation, 2026-11-15" },
+      "surfaces": [
+        { "id": "claude-code.stream-json", "stability": "documented-interface", "p0Use": "import-candidate", "source": "https://code.claude.com/docs/en/headless", "note": "claude -p --output-format stream-json --verbose; full message schema in Agent SDK reference, not read" },
+        { "id": "claude-code.transcript-jsonl", "stability": "internal-unstable", "p0Use": "import-candidate", "source": "https://code.claude.com/docs/en/sessions", "note": "Docs: entry format internal, changes between versions; no official record schema" },
+        { "id": "claude-code.hooks", "stability": "documented-interface", "p0Use": "deferred", "source": "https://code.claude.com/docs/en/hooks", "note": "Requires installing a hook (S9); live-hook mode is P3" }
+      ],
+      "cells": {
+        "sessionLifecycle": { "value": "available", "evidence": "DOCUMENTED", "surfaces": ["claude-code.hooks", "claude-code.stream-json"], "source": "https://code.claude.com/docs/en/hooks", "note": "SessionStart/SessionEnd hooks; stream-json system/init and final result message (https://code.claude.com/docs/en/headless)", "verifiedByFixture": false },
+        "toolCallInputs": { "value": "available", "evidence": "DOCUMENTED", "surfaces": ["claude-code.hooks"], "source": "https://code.claude.com/docs/en/hooks", "note": "PreToolUse/PostToolUse tool_input + tool_use_id. Per-message tool_use shape in stream-json not read (Agent SDK reference)", "verifiedByFixture": false },
+        "toolCallOutputs": { "value": "available", "evidence": "DOCUMENTED", "surfaces": ["claude-code.hooks"], "source": "https://code.claude.com/docs/en/hooks", "note": "PostToolUse tool_response; shape is tool-dependent", "verifiedByFixture": false },
+        "llmMetadata": { "value": "partial", "evidence": "DOCUMENTED", "surfaces": ["claude-code.hooks", "claude-code.stream-json"], "source": "https://code.claude.com/docs/en/hooks", "note": "SessionStart optional model; Pre/PostModelSwitch; stream-json system/init model. Per-message model UNKNOWN", "verifiedByFixture": false },
+        "filePatches": { "value": "partial", "evidence": "DOCUMENTED", "surfaces": ["claude-code.hooks"], "source": "https://code.claude.com/docs/en/hooks", "note": "Write/Edit visible only via tool_input/tool_response; Bash bashEditDiff is public beta, best-effort", "verifiedByFixture": false },
+        "subagents": { "value": "available", "evidence": "DOCUMENTED", "surfaces": ["claude-code.hooks", "claude-code.stream-json"], "source": "https://code.claude.com/docs/en/hooks", "note": "SubagentStart/Stop with agent_id, agent_transcript_path; stream-json parent_tool_use_id (https://code.claude.com/docs/en/headless)", "verifiedByFixture": false },
+        "permissions": { "value": "available", "evidence": "DOCUMENTED", "surfaces": ["claude-code.hooks", "claude-code.stream-json"], "source": "https://code.claude.com/docs/en/hooks", "note": "PermissionRequest (no tool_use_id); PermissionDenied auto mode only; stream-json permission_denied / result.permission_denials", "verifiedByFixture": false },
+        "failures": { "value": "available", "evidence": "DOCUMENTED", "surfaces": ["claude-code.hooks", "claude-code.stream-json"], "source": "https://code.claude.com/docs/en/hooks", "note": "PostToolUseFailure, StopFailure; stream-json system/api_retry", "verifiedByFixture": false },
+        "timestamps": { "value": "unknown", "evidence": "DOCUMENTED", "surfaces": ["claude-code.hooks", "claude-code.stream-json", "claude-code.transcript-jsonl"], "source": "https://code.claude.com/docs/en/hooks", "note": "No timestamp among documented hook common fields; stream-json and transcript timestamps not documented in pages read. Downgraded from research 'partial' because receipt time is not provider data", "verifiedByFixture": false },
+        "tokens": { "value": "partial", "evidence": "DOCUMENTED", "surfaces": ["claude-code.stream-json"], "source": "https://code.claude.com/docs/en/headless", "note": "result message usage/cost (client-side estimates); per-call token fields not documented in pages read", "verifiedByFixture": false }
+      }
+    },
+    "codex-cli": {
+      "captureMode": "import-file of a user-captured `codex exec --json` stdout stream (P0: fixture shape only)",
+      "importViability": "exec --json: documented event types + source-observed type definitions on main (not pinned tag); rollout files: no official schema (community only)",
+      "testedVersions": [],
+      "documentedVersionSeen": { "version": "0.169.0", "evidence": "SOURCE-OBSERVED", "source": "https://github.com/openai/codex/releases/tag/rust-v0.169.0" },
+      "localObservedVersion": { "version": "0.167.0", "evidence": "LOCAL-OBSERVED", "source": "codex --version on lead workstation, 2026-11-15" },
+      "surfaces": [
+        { "id": "codex-cli.exec-jsonl", "stability": "documented-interface", "p0Use": "fixture-shape-only", "source": "https://learn.chatgpt.com/docs/non-interactive-mode", "note": "Type definitions read from codex-rs/exec/src/exec_events.rs on main, not on installed/latest tag" },
+        { "id": "codex-cli.rollout-jsonl", "stability": "undocumented", "p0Use": "not-used", "source": "https://learn.chatgpt.com/docs/non-interactive-mode", "note": "Docs mention rollout files only; schema known only from community sources" }
+      ],
+      "cells": {
+        "sessionLifecycle": { "value": "partial", "evidence": "SOURCE-OBSERVED", "surfaces": ["codex-cli.exec-jsonl"], "source": "https://github.com/openai/codex/blob/main/codex-rs/exec/src/exec_events.rs", "note": "thread.started, turn.started/completed/failed; no explicit session end event", "verifiedByFixture": false },
+        "toolCallInputs": { "value": "partial", "evidence": "SOURCE-OBSERVED", "surfaces": ["codex-cli.exec-jsonl"], "source": "https://github.com/openai/codex/blob/main/codex-rs/exec/src/exec_events.rs", "note": "command_execution.command, mcp_tool_call.arguments; other tool types unclear", "verifiedByFixture": false },
+        "toolCallOutputs": { "value": "available", "evidence": "SOURCE-OBSERVED", "surfaces": ["codex-cli.exec-jsonl"], "source": "https://github.com/openai/codex/blob/main/codex-rs/exec/src/exec_events.rs", "note": "aggregated_output, exit_code (optional), mcp result/error", "verifiedByFixture": false },
+        "llmMetadata": { "value": "unknown", "evidence": "SOURCE-OBSERVED", "surfaces": ["codex-cli.exec-jsonl"], "source": "https://github.com/openai/codex/blob/main/codex-rs/exec/src/exec_events.rs", "note": "No model id field seen in exec event types (as summarized); not confirmed absent", "verifiedByFixture": false },
+        "filePatches": { "value": "partial", "evidence": "SOURCE-OBSERVED", "surfaces": ["codex-cli.exec-jsonl"], "source": "https://github.com/openai/codex/blob/main/codex-rs/exec/src/exec_events.rs", "note": "file_change.changes[] + status; per-file diff content (FileUpdateChange fields) UNKNOWN", "verifiedByFixture": false },
+        "subagents": { "value": "partial", "evidence": "SOURCE-OBSERVED", "surfaces": ["codex-cli.exec-jsonl"], "source": "https://github.com/openai/codex/blob/main/codex-rs/exec/src/exec_events.rs", "note": "collab_tool_call spawn_agent/send_input/wait/close_agent with thread ids", "verifiedByFixture": false },
+        "permissions": { "value": "partial", "evidence": "SOURCE-OBSERVED", "surfaces": ["codex-cli.exec-jsonl"], "source": "https://github.com/openai/codex/blob/main/codex-rs/exec/src/exec_events.rs", "note": "Only command_execution.status=declined; no dedicated approval event seen", "verifiedByFixture": false },
+        "failures": { "value": "available", "evidence": "SOURCE-OBSERVED", "surfaces": ["codex-cli.exec-jsonl"], "source": "https://github.com/openai/codex/blob/main/codex-rs/exec/src/exec_events.rs", "note": "turn.failed{error}, error{message}, item status failed", "verifiedByFixture": false },
+        "timestamps": { "value": "unknown", "evidence": "SOURCE-OBSERVED", "surfaces": ["codex-cli.exec-jsonl"], "source": "https://github.com/openai/codex/blob/main/codex-rs/exec/src/exec_events.rs", "note": "No timestamp field seen in exec event types (as summarized)", "verifiedByFixture": false },
+        "tokens": { "value": "available", "evidence": "SOURCE-OBSERVED", "surfaces": ["codex-cli.exec-jsonl"], "source": "https://github.com/openai/codex/blob/main/codex-rs/exec/src/exec_events.rs", "note": "turn.completed.usage per turn (also shown on https://learn.chatgpt.com/docs/non-interactive-mode)", "verifiedByFixture": false }
+      }
+    },
+    "gemini-cli": {
+      "captureMode": "none in P0 (fixture shape only); candidate future surface: hooks (live-hook, P3)",
+      "importViability": "unknown: transcript_path schema undocumented; telemetry outfile format unspecified; hooks require live capture. Product continuity risk (Antigravity CLI banner)",
+      "testedVersions": [],
+      "documentedVersionSeen": { "version": "0.68.0", "evidence": "SOURCE-OBSERVED", "source": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.68.0" },
+      "localObservedVersion": { "version": null, "evidence": "NONE", "source": "not installed locally" },
+      "surfaces": [
+        { "id": "gemini-cli.hooks", "stability": "documented-interface", "p0Use": "fixture-shape-only", "source": "https://geminicli.com/docs/hooks/reference/", "note": "Payload shapes documented; capture requires hook install (S9), P3" },
+        { "id": "gemini-cli.telemetry", "stability": "documented-interface", "p0Use": "not-used", "source": "https://geminicli.com/docs/cli/telemetry/", "note": "OTLP/file; outfile record format not specified" },
+        { "id": "gemini-cli.transcript", "stability": "undocumented", "p0Use": "not-used", "source": "https://geminicli.com/docs/hooks/reference/", "note": "transcript_path given; schema not documented" }
+      ],
+      "cells": {
+        "sessionLifecycle": { "value": "available", "evidence": "DOCUMENTED", "surfaces": ["gemini-cli.hooks"], "source": "https://geminicli.com/docs/hooks/reference/", "note": "SessionStart source, SessionEnd reason", "verifiedByFixture": false },
+        "toolCallInputs": { "value": "available", "evidence": "DOCUMENTED", "surfaces": ["gemini-cli.hooks"], "source": "https://geminicli.com/docs/hooks/reference/", "note": "BeforeTool tool_name, tool_input; no tool call id documented", "verifiedByFixture": false },
+        "toolCallOutputs": { "value": "available", "evidence": "DOCUMENTED", "surfaces": ["gemini-cli.hooks"], "source": "https://geminicli.com/docs/hooks/reference/", "note": "AfterTool tool_response{llmContent, returnDisplay, error?}", "verifiedByFixture": false },
+        "llmMetadata": { "value": "partial", "evidence": "DOCUMENTED", "surfaces": ["gemini-cli.hooks", "gemini-cli.telemetry"], "source": "https://geminicli.com/docs/hooks/reference/", "note": "llm_request.model in BeforeModel/AfterModel; telemetry api_request model", "verifiedByFixture": false },
+        "filePatches": { "value": "partial", "evidence": "DOCUMENTED", "surfaces": ["gemini-cli.hooks", "gemini-cli.telemetry"], "source": "https://geminicli.com/docs/cli/telemetry/", "note": "Derivable only from tool inputs; telemetry file_operation event", "verifiedByFixture": false },
+        "subagents": { "value": "unknown", "evidence": "DOCUMENTED", "surfaces": ["gemini-cli.hooks", "gemini-cli.telemetry"], "source": "https://geminicli.com/docs/hooks/reference/", "note": "No subagent hook documented; telemetry agent.start/finish exists but semantics not read", "verifiedByFixture": false },
+        "permissions": { "value": "partial", "evidence": "DOCUMENTED", "surfaces": ["gemini-cli.hooks", "gemini-cli.telemetry"], "source": "https://geminicli.com/docs/hooks/reference/", "note": "Notification notification_type=ToolPermission; telemetry tool_call decision", "verifiedByFixture": false },
+        "failures": { "value": "partial", "evidence": "DOCUMENTED", "surfaces": ["gemini-cli.hooks", "gemini-cli.telemetry"], "source": "https://geminicli.com/docs/hooks/reference/", "note": "tool_response.error; telemetry api_error; no failure hook", "verifiedByFixture": false },
+        "timestamps": { "value": "available", "evidence": "DOCUMENTED", "surfaces": ["gemini-cli.hooks"], "source": "https://geminicli.com/docs/hooks/reference/", "note": "Base hook input timestamp (ISO 8601)", "verifiedByFixture": false },
+        "tokens": { "value": "partial", "evidence": "DOCUMENTED", "surfaces": ["gemini-cli.hooks", "gemini-cli.telemetry"], "source": "https://geminicli.com/docs/hooks/reference/", "note": "AfterModel usageMetadata.totalTokenCount (may be per chunk); telemetry api_response detailed counts", "verifiedByFixture": false }
+      }
+    },
+    "opencode": {
+      "captureMode": "none in P0 (fixture shape only); candidate future surfaces: `opencode session export` JSON, `opencode run --format json`, SDK SSE",
+      "importViability": "partial: session export documented in v2 CLI docs only, JSON schema unknown; SSE event type names unverified. Official repo identity rests on self-description (anomalyco/opencode)",
+      "testedVersions": [],
+      "documentedVersionSeen": { "version": "1.19.5", "evidence": "SOURCE-OBSERVED", "source": "https://github.com/anomalyco/opencode/releases/tag/v1.19.5" },
+      "localObservedVersion": { "version": null, "evidence": "NONE", "source": "not installed locally" },
+      "surfaces": [
+        { "id": "opencode.session-export", "stability": "documented-interface", "p0Use": "fixture-shape-only", "source": "https://opencode.ai/v2/docs/cli/commands/", "note": "Command documented; output schema not documented (community: {info, messages})" },
+        { "id": "opencode.run-json", "stability": "documented-interface", "p0Use": "fixture-shape-only", "source": "https://opencode.ai/v2/docs/cli/commands/", "note": "run --format json: newline-delimited JSON; record shapes not documented" },
+        { "id": "opencode.sdk-events", "stability": "documented-interface", "p0Use": "deferred", "source": "https://opencode.ai/docs/server/", "note": "SSE; event types defined by OpenAPI /doc (not read)" },
+        { "id": "opencode.plugin", "stability": "documented-interface", "p0Use": "deferred", "source": "https://opencode.ai/docs/build/plugins/server", "note": "Plugin hooks; requires plugin install (S9)" }
+      ],
+      "cells": {
+        "sessionLifecycle": { "value": "unknown", "evidence": "DOCUMENTED", "surfaces": ["opencode.sdk-events"], "source": "https://opencode.ai/docs/server/", "note": "Only server.connected documented; session.* event names unverified; export info is community-only", "verifiedByFixture": false },
+        "toolCallInputs": { "value": "partial", "evidence": "DOCUMENTED", "surfaces": ["opencode.plugin"], "source": "https://opencode.ai/docs/build/plugins/server", "note": "tool.execute.before hook exists; payload shape unspecified; stream/export shape unknown", "verifiedByFixture": false },
+        "toolCallOutputs": { "value": "partial", "evidence": "DOCUMENTED", "surfaces": ["opencode.plugin"], "source": "https://opencode.ai/docs/build/plugins/server", "note": "tool.execute.after status completed+result | error+error.message", "verifiedByFixture": false },
+        "llmMetadata": { "value": "partial", "evidence": "DOCUMENTED", "surfaces": ["opencode.plugin"], "source": "https://opencode.ai/docs/build/plugins/server", "note": "Plugin context hook carries model; event/export payloads unknown", "verifiedByFixture": false },
+        "filePatches": { "value": "unknown", "evidence": "NONE", "surfaces": [], "source": "none", "note": "Revert APIs exist; patch event shape unverified", "verifiedByFixture": false },
+        "subagents": { "value": "unknown", "evidence": "DOCUMENTED", "surfaces": ["opencode.sdk-events"], "source": "https://opencode.ai/docs/sdk/", "note": "session children method documented; event shapes unverified", "verifiedByFixture": false },
+        "permissions": { "value": "partial", "evidence": "DOCUMENTED", "surfaces": ["opencode.plugin", "opencode.sdk-events"], "source": "https://opencode.ai/docs/build/plugins/server", "note": "permission.evaluate hook; SDK permission-response method (https://opencode.ai/docs/sdk/)", "verifiedByFixture": false },
+        "failures": { "value": "partial", "evidence": "DOCUMENTED", "surfaces": ["opencode.plugin"], "source": "https://opencode.ai/docs/build/plugins/server", "note": "tool.execute.after error; retry hook", "verifiedByFixture": false },
+        "timestamps": { "value": "unknown", "evidence": "NONE", "surfaces": [], "source": "none", "note": "Not found in docs read", "verifiedByFixture": false },
+        "tokens": { "value": "unknown", "evidence": "NONE", "surfaces": [], "source": "none", "note": "Only compaction.result.tokens mentioned; message token fields unverified", "verifiedByFixture": false }
+      }
+    }
+  }
+}

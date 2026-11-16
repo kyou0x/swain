@@ -1,0 +1,19 @@
+{
+  "synthetic": true,
+  "verifiedAgainstRealOutput": false,
+  "provider": "gemini-cli",
+  "derivedFrom": "docs/research/FORMAT-gemini.md (source tag v0.68.0, section 10 synthetic example), extended by hand to cover each mapped record type",
+  "providerVersionObserved": null,
+  "note": "No file here comes from a real Gemini CLI session. Paths, ids, hashes and text are invented. Hostile files are hand-written to probe the adapters.",
+  "files": {
+    "session-golden.jsonl": { "adapter": "gemini-cli.chat-jsonl", "purpose": "golden: header, re-appended message ids, $set, $patch, $rewindTo, functionResponse carriers, thoughts, tokens, tool statuses, info/error/warning, unknown record" },
+    "session-header-only.jsonl": { "adapter": "gemini-cli.chat-jsonl", "purpose": "header-only session; must not collide with chat-json" },
+    "session-legacy.json": { "adapter": "gemini-cli.chat-json", "purpose": "golden: legacy single ConversationRecord document, pretty printed" },
+    "hostile-content.jsonl": { "adapter": "gemini-cli.chat-jsonl", "purpose": "HTML, ANSI/OSC, bidi, __proto__, secret-shaped strings, odd types and keys" },
+    "hostile-rewind-unknown.jsonl": { "adapter": "gemini-cli.chat-jsonl", "purpose": "$rewindTo an unknown id" },
+    "hostile-patch-missing.jsonl": { "adapter": "gemini-cli.chat-jsonl", "purpose": "$patch for missing ids, malformed removeIds/orderIds" },
+    "hostile-wrong-types.jsonl": { "adapter": "gemini-cli.chat-jsonl", "purpose": "wrong value types in every mapped field, non-object records, $set.messages checkpoint" },
+    "hostile-legacy-no-messages.json": { "adapter": "gemini-cli.chat-json", "purpose": "legacy document with no /messages" },
+    "hostile-legacy-messages-wrong-type.json": { "adapter": "gemini-cli.chat-json", "purpose": "legacy document whose /messages is not an array" }
+  }
+}
