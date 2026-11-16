@@ -1,0 +1,28 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": ".",
+    "outDir": "dist"
+  },
+  "include": ["src/**/*.ts", "test/**/*.ts"],
+  "references": [
+    {
+      "path": "../core"
+    },
+    {
+      "path": "../model"
+    },
+    {
+      "path": "../otlp"
+    },
+    {
+      "path": "../db"
+    },
+    {
+      "path": "../report"
+    },
+    {
+      "path": "../store"
+    }
+  ]
+}
