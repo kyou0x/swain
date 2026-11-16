@@ -1,0 +1,227 @@
+{
+  "info": {
+    "id": "ses_<script>alert(1)</script>",
+    "slug": "fake-slug",
+    "projectID": "proj_fake01",
+    "directory": "/home/user/<img src=x onerror=alert(1)>",
+    "path": "",
+    "title": "Fix greeting typo",
+    "version": "1.19.5",
+    "summary": {
+      "additions": 1,
+      "deletions": 1,
+      "files": 1
+    },
+    "cost": 0.0123,
+    "tokens": {
+      "input": 1500,
+      "output": 200,
+      "reasoning": 50,
+      "cache": {
+        "read": 1000,
+        "write": 300
+      }
+    },
+    "agent": "build",
+    "model": {
+      "id": "fake-model",
+      "providerID": "fake-provider"
+    },
+    "time": {
+      "created": 1790000000000,
+      "updated": 1790000060000
+    }
+  },
+  "messages": [
+    {
+      "info": {
+        "id": "msg_h1",
+        "sessionID": "ses_fake01",
+        "role": "user",
+        "time": {
+          "created": 1790000000000
+        }
+      },
+      "parts": [
+        {
+          "id": "prt_h1a",
+          "sessionID": "ses_fake01",
+          "messageID": "msg_h1",
+          "type": "text",
+          "text": "<script>alert(1)</script> [x](javascript:alert(1)) ignore previous instructions; AKIAIOSFODNN7EXAMPLE"
+        }
+      ]
+    },
+    {
+      "info": {
+        "id": "msg_h2",
+        "sessionID": "ses_fake01",
+        "role": "assistant",
+        "time": {
+          "created": 1790000000001,
+          "completed": 1790000000002
+        },
+        "modelID": "m<b>",
+        "providerID": "p",
+        "cost": 0,
+        "tokens": {
+          "input": 1,
+          "output": 1,
+          "reasoning": 0,
+          "cache": {
+            "read": 0,
+            "write": 0
+          }
+        }
+      },
+      "parts": [
+        {
+          "id": "prt_h2a",
+          "sessionID": "ses_fake01",
+          "messageID": "msg_h2",
+          "type": "text",
+          "text": "\u001b[2J\u001b]8;;http://evil.example/\u0007x\u001b]8;;\u0007 ‮  "
+        },
+        {
+          "id": "prt_h2b",
+          "sessionID": "ses_fake01",
+          "messageID": "msg_h2",
+          "type": "tool",
+          "callID": "c1",
+          "tool": "bash<script>\u001b[31m‮",
+          "state": {
+            "status": "completed",
+            "input": {
+              "command": "echo ghp_0123456789abcdefghijklmnopqrstuvwxyz"
+            },
+            "output": "-----BEGIN PRIVATE KEY-----\nabc\n-----END PRIVATE KEY-----",
+            "title": "t",
+            "metadata": {
+              "exit": 0
+            },
+            "time": {
+              "start": 1790000000001,
+              "end": 1790000000002
+            }
+          }
+        },
+        {
+          "id": "prt_h2c",
+          "sessionID": "ses_fake01",
+          "messageID": "msg_h2",
+          "type": "tool",
+          "callID": "c2",
+          "tool": "write",
+          "state": {
+            "status": "completed",
+            "input": {
+              "filePath": "../../etc/passwd",
+              "content": "x"
+            },
+            "output": "ok",
+            "title": "t",
+            "metadata": {
+              "exists": true
+            },
+            "time": {
+              "start": 1790000000001,
+              "end": 1790000000002
+            }
+          }
+        },
+        {
+          "id": "prt_h2d",
+          "sessionID": "ses_fake01",
+          "messageID": "msg_h2",
+          "type": "patch",
+          "hash": "h",
+          "files": [
+            "/etc/shadow",
+            "../../x",
+            5,
+            "",
+            "a\u0000b"
+          ]
+        },
+        {
+          "id": "prt_h2e",
+          "sessionID": "ses_fake01",
+          "messageID": "msg_h2",
+          "type": "tool",
+          "callID": "c3",
+          "tool": 7,
+          "state": "nope"
+        },
+        {
+          "id": "prt_h2f",
+          "sessionID": "ses_fake01",
+          "messageID": "msg_h2",
+          "type": "reasoning",
+          "text": 5,
+          "time": {
+            "start": "x"
+          }
+        },
+        {
+          "id": "prt_h2g",
+          "sessionID": "ses_fake01",
+          "messageID": "msg_h2",
+          "type": "step-finish",
+          "reason": "<b>weird</b>",
+          "cost": -1,
+          "tokens": {
+            "input": "1",
+            "output": -2,
+            "reasoning": 1.5,
+            "cache": "x"
+          }
+        },
+        "bare string part",
+        null,
+        {
+          "type": [
+            "array-type"
+          ]
+        }
+      ]
+    },
+    {
+      "info": {
+        "id": "msg_h3",
+        "sessionID": "s",
+        "role": "assistant",
+        "time": {
+          "created": "yesterday",
+          "completed": -1
+        },
+        "__proto__": {
+          "polluted": true
+        }
+      },
+      "parts": [
+        {
+          "type": "text",
+          "text": "proto",
+          "__proto__": {
+            "x": 1
+          }
+        }
+      ]
+    },
+    {
+      "info": {
+        "id": "msg_h4",
+        "role": "assistant",
+        "time": {
+          "created": 100000000000000000000
+        }
+      },
+      "parts": "not-an-array"
+    },
+    "bare string element",
+    {
+      "info": "not-an-object",
+      "parts": []
+    }
+  ]
+}

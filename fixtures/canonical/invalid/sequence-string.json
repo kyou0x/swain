@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "0.1.0",
+  "eventId": "evt_3516bc95641f9edb7d92b0b70e12d34b",
+  "kind": "tool.requested",
+  "provider": "codex-cli",
+  "providerVersion": "0.0.0-synthetic",
+  "sourceKind": "codex-cli.exec-jsonl",
+  "sessionId": "ses_4fa00e817146832a5dd83c1f1f619ac0",
+  "turnId": "trn_ec8d13a1472bf23b8b9e89232637584c",
+  "sourceSequence": "1",
+  "subIndex": 0,
+  "time": {
+    "value": "2026-01-01T00:00:15.000Z",
+    "origin": "source",
+    "status": "valid"
+  },
+  "actor": {
+    "actorId": "act_bcd41d433a6786d9061660539c61b618",
+    "role": "agent"
+  },
+  "status": "none",
+  "payload": {
+    "toolCallId": "tc_da8963fed47a95609534021f92bcec4f",
+    "toolName": "synthetic_tool",
+    "toolNamespace": "builtin",
+    "input": {
+      "sha256": "3782f8d6e8a9bedd9f99247407f93eeb369dfccfca47cc57c742ec5676672543",
+      "byteLength": 28,
+      "encoding": "jcs-json",
+      "retention": "hash-only"
+    }
+  },
+  "links": [],
+  "provenance": {
+    "type": "record",
+    "sourceId": "src_5d52b818f9ac13abb8ec52467baa7540",
+    "line": 6,
+    "byteOffset": 500,
+    "byteLength": 99,
+    "sha256": "48d9489bd6dfc146e7287fb6fb5c0469a0dfd7b788dcba13e8f0a48dbec4eb42",
+    "pointer": "",
+    "adapter": {
+      "id": "codex-cli.exec-jsonl",
+      "version": "0.0.1"
+    }
+  },
+  "completeness": {
+    "timestamp": {
+      "state": "captured"
+    },
+    "actor": {
+      "state": "captured"
+    },
+    "inputs": {
+      "state": "captured"
+    },
+    "outputs": {
+      "state": "captured"
+    }
+  },
+  "attributes": {
+    "codex-cli.note": "synthetic",
+    "codex-cli.count": 1,
+    "codex-cli.flag": true,
+    "codex-cli.none": null
+  }
+}

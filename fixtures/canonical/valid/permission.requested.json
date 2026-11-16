@@ -1,0 +1,55 @@
+{
+  "schemaVersion": "0.1.0",
+  "eventId": "evt_be10d0a93d3ba4a6497759580c2a127e",
+  "kind": "permission.requested",
+  "provider": "codex-cli",
+  "providerVersion": "0.0.0-synthetic",
+  "sourceKind": "codex-cli.exec-jsonl",
+  "sessionId": "ses_4fa00e817146832a5dd83c1f1f619ac0",
+  "turnId": "trn_ec8d13a1472bf23b8b9e89232637584c",
+  "sourceSequence": 11,
+  "subIndex": 0,
+  "time": {
+    "value": "2026-01-01T00:00:21.000Z",
+    "origin": "source",
+    "status": "valid"
+  },
+  "actor": {
+    "actorId": "act_bcd41d433a6786d9061660539c61b618",
+    "role": "agent"
+  },
+  "status": "none",
+  "payload": {
+    "toolName": "synthetic_tool",
+    "toolCallId": "tc_da8963fed47a95609534021f92bcec4f",
+    "input": null
+  },
+  "links": [],
+  "provenance": {
+    "type": "record",
+    "sourceId": "src_5d52b818f9ac13abb8ec52467baa7540",
+    "line": 12,
+    "byteOffset": 1100,
+    "byteLength": 99,
+    "sha256": "48d9489bd6dfc146e7287fb6fb5c0469a0dfd7b788dcba13e8f0a48dbec4eb42",
+    "pointer": "",
+    "adapter": {
+      "id": "codex-cli.exec-jsonl",
+      "version": "0.0.1"
+    }
+  },
+  "completeness": {
+    "timestamp": {
+      "state": "captured"
+    },
+    "actor": {
+      "state": "captured"
+    }
+  },
+  "attributes": {
+    "codex-cli.note": "synthetic",
+    "codex-cli.count": 1,
+    "codex-cli.flag": true,
+    "codex-cli.none": null
+  }
+}

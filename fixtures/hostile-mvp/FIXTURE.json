@@ -1,0 +1,6 @@
+{
+  "synthetic": true,
+  "verifiedAgainstRealOutput": false,
+  "description": "Hostile synthetic inputs for core framing and the pipeline. Huge lines, FIFOs, symlinks and zstd bombs are generated inside tests.",
+  "note": "Hand-written synthetic bytes. No real session data."
+}

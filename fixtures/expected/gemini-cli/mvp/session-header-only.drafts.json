@@ -1,0 +1,49 @@
+{
+  "dispositions": [],
+  "drafts": [
+    {
+      "actor": {
+        "role": "runtime"
+      },
+      "actorKey": "runtime",
+      "attributes": {},
+      "completeness": {
+        "actor": {
+          "state": "captured"
+        },
+        "timestamp": {
+          "state": "captured"
+        }
+      },
+      "kind": "session.started",
+      "nativeSessionId": "a1b2c3d4-0000-4000-8000-000000000001",
+      "payload": {
+        "nativeSessionId": "a1b2c3d4-0000-4000-8000-000000000001",
+        "trigger": "unknown"
+      },
+      "pointer": "",
+      "providerVersion": null,
+      "recordRef": {
+        "evidence": 0,
+        "order": 0
+      },
+      "status": "none",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-11-15T10:30:00.000Z"
+      }
+    }
+  ],
+  "warnings": [
+    {
+      "code": "unmapped-field",
+      "detail": {
+        "fieldCode": "gm.meta-fields",
+        "occurrences": 1
+      },
+      "severity": "info",
+      "sourceSequence": null
+    }
+  ]
+}

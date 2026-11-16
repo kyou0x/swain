@@ -1,0 +1,684 @@
+{
+  "dispositions": [],
+  "drafts": [
+    {
+      "actor": {
+        "role": "unknown"
+      },
+      "actorKey": "root",
+      "attributes": {},
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "timestamp": {
+          "reason": "missing-in-record",
+          "state": "absent"
+        }
+      },
+      "kind": "source.unknown",
+      "payload": {
+        "nativeType": "user",
+        "recordSha256": "d2d9476a031ea892c4554b8f440f2aa294f0bd466dfd55fe60912f2bc5fd14a0",
+        "topLevelKeys": [
+          "content",
+          "id",
+          "type"
+        ]
+      },
+      "pointer": "",
+      "providerVersion": null,
+      "recordRef": {
+        "evidence": 4,
+        "order": 4
+      },
+      "status": "none",
+      "time": {
+        "origin": "none",
+        "status": "missing",
+        "value": null
+      }
+    },
+    {
+      "actor": {
+        "role": "unknown"
+      },
+      "actorKey": "root",
+      "attributes": {},
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "timestamp": {
+          "reason": "missing-in-record",
+          "state": "absent"
+        }
+      },
+      "kind": "source.unknown",
+      "payload": {
+        "nativeType": null,
+        "recordSha256": "a615eeaee21de5179de080de8c3052c8da901138406ba71c38c032845f7d54f4",
+        "topLevelKeys": []
+      },
+      "pointer": "",
+      "providerVersion": null,
+      "recordRef": {
+        "evidence": 5,
+        "order": 5
+      },
+      "status": "none",
+      "time": {
+        "origin": "none",
+        "status": "missing",
+        "value": null
+      }
+    },
+    {
+      "actor": {
+        "role": "unknown"
+      },
+      "actorKey": "root",
+      "attributes": {},
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "timestamp": {
+          "reason": "missing-in-record",
+          "state": "absent"
+        }
+      },
+      "kind": "source.unknown",
+      "payload": {
+        "nativeType": null,
+        "recordSha256": "707207bc9187da639d9321e37a1c1d7782b39758e5dd8eff7a72c7cc815a4452",
+        "topLevelKeys": []
+      },
+      "pointer": "",
+      "providerVersion": null,
+      "recordRef": {
+        "evidence": 6,
+        "order": 6
+      },
+      "status": "none",
+      "time": {
+        "origin": "none",
+        "status": "missing",
+        "value": null
+      }
+    },
+    {
+      "actor": {
+        "role": "unknown"
+      },
+      "actorKey": "root",
+      "attributes": {},
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "timestamp": {
+          "reason": "missing-in-record",
+          "state": "absent"
+        }
+      },
+      "kind": "source.unknown",
+      "payload": {
+        "nativeType": null,
+        "recordSha256": "7902699be42c8a8e46fbbb4501726517e86b22c56a189f7625a6da49081b2451",
+        "topLevelKeys": []
+      },
+      "pointer": "",
+      "providerVersion": null,
+      "recordRef": {
+        "evidence": 7,
+        "order": 7
+      },
+      "status": "none",
+      "time": {
+        "origin": "none",
+        "status": "missing",
+        "value": null
+      }
+    },
+    {
+      "actor": {
+        "role": "unknown"
+      },
+      "actorKey": "root",
+      "attributes": {},
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "timestamp": {
+          "reason": "missing-in-record",
+          "state": "absent"
+        }
+      },
+      "kind": "source.unknown",
+      "payload": {
+        "nativeType": null,
+        "recordSha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+        "topLevelKeys": []
+      },
+      "pointer": "",
+      "providerVersion": null,
+      "recordRef": {
+        "evidence": 8,
+        "order": 8
+      },
+      "status": "none",
+      "time": {
+        "origin": "none",
+        "status": "missing",
+        "value": null
+      }
+    },
+    {
+      "actor": {
+        "role": "unknown"
+      },
+      "actorKey": "root",
+      "attributes": {},
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "timestamp": {
+          "reason": "missing-in-record",
+          "state": "absent"
+        }
+      },
+      "kind": "source.unknown",
+      "payload": {
+        "nativeType": "$set",
+        "recordSha256": "9eddc70b4b668300f13340c64aaec7f083ebbb0ae0235b0f95ec25c2053d42fa",
+        "topLevelKeys": [
+          "$set"
+        ]
+      },
+      "pointer": "",
+      "providerVersion": null,
+      "recordRef": {
+        "evidence": 10,
+        "order": 10
+      },
+      "status": "none",
+      "time": {
+        "origin": "none",
+        "status": "missing",
+        "value": null
+      }
+    },
+    {
+      "actor": {
+        "role": "runtime"
+      },
+      "actorKey": "runtime",
+      "attributes": {},
+      "completeness": {
+        "actor": {
+          "state": "captured"
+        },
+        "timestamp": {
+          "state": "captured"
+        }
+      },
+      "kind": "session.started",
+      "nativeSessionId": "a1b2c3d4-0000-4000-8000-000000000001",
+      "payload": {
+        "nativeSessionId": "a1b2c3d4-0000-4000-8000-000000000001",
+        "trigger": "unknown"
+      },
+      "pointer": "",
+      "providerVersion": null,
+      "recordRef": {
+        "evidence": 0,
+        "order": 0
+      },
+      "status": "none",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-11-15T10:30:00.000Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "user"
+      },
+      "actorKey": "user",
+      "attributes": {
+        "gemini-cli.message_type": "user"
+      },
+      "completeness": {
+        "actor": {
+          "state": "captured"
+        },
+        "content": {
+          "state": "captured"
+        },
+        "timestamp": {
+          "reason": "malformed-value",
+          "state": "partial"
+        }
+      },
+      "kind": "turn.started",
+      "payload": {
+        "prompt": {
+          "byteLength": 2,
+          "encoding": "jcs-json",
+          "retention": "hash-only",
+          "sha256": "73475cb40a568e8da8a045ced110137e159f890ac4da883b6b17dc651b3a8049"
+        }
+      },
+      "pointer": "/content",
+      "providerVersion": null,
+      "recordRef": {
+        "evidence": 1,
+        "order": 1
+      },
+      "status": "none",
+      "time": {
+        "origin": "source",
+        "status": "invalid",
+        "value": null
+      }
+    },
+    {
+      "actor": {
+        "role": "agent"
+      },
+      "actorKey": "root",
+      "attributes": {
+        "gemini-cli.message_type": "gemini"
+      },
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "content": {
+          "state": "captured"
+        },
+        "internalReasoning": {
+          "reason": "provider-does-not-expose",
+          "state": "unavailable"
+        },
+        "timestamp": {
+          "state": "captured"
+        }
+      },
+      "kind": "message.observed",
+      "payload": {
+        "channel": "text",
+        "content": {
+          "byteLength": 18,
+          "encoding": "utf8",
+          "retention": "hash-only",
+          "sha256": "c858e560eebe969596ff27ac31c3009c9cbe293b7a5343842681c25770a3bc3b"
+        },
+        "role": "assistant"
+      },
+      "pointer": "/content",
+      "providerVersion": null,
+      "recordRef": {
+        "evidence": 2,
+        "order": 2
+      },
+      "status": "none",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-11-15T10:30:06.000Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "agent"
+      },
+      "actorKey": "root",
+      "attributes": {
+        "gemini-cli.message_type": "gemini"
+      },
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "content": {
+          "state": "captured"
+        },
+        "internalReasoning": {
+          "reason": "provider-does-not-expose",
+          "state": "unavailable"
+        },
+        "timestamp": {
+          "state": "captured"
+        }
+      },
+      "kind": "message.observed",
+      "payload": {
+        "channel": "text",
+        "content": {
+          "byteLength": 1,
+          "encoding": "utf8",
+          "retention": "hash-only",
+          "sha256": "e3b98a4da31a127d4bde6e43033f66ba274cab0eb7eb1c70ec41402bf6273dd8"
+        },
+        "role": "assistant"
+      },
+      "pointer": "/content",
+      "providerVersion": null,
+      "recordRef": {
+        "evidence": 3,
+        "order": 3
+      },
+      "status": "none",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-11-15T10:30:07.000Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "agent"
+      },
+      "actorKey": "root",
+      "attributes": {},
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "timestamp": {
+          "state": "captured"
+        }
+      },
+      "kind": "source.unknown",
+      "payload": {
+        "nativeType": null,
+        "recordSha256": "f09365d8394cf4d5ad89f8775d2e07889e4f811e6a51a4f855c05f6914e84942",
+        "topLevelKeys": []
+      },
+      "pointer": "/toolCalls/0",
+      "providerVersion": null,
+      "recordRef": {
+        "evidence": 3,
+        "order": 3
+      },
+      "status": "none",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-11-15T10:30:07.000Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "agent"
+      },
+      "actorKey": "root",
+      "attributes": {},
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "timestamp": {
+          "state": "captured"
+        }
+      },
+      "kind": "source.unknown",
+      "payload": {
+        "nativeType": null,
+        "recordSha256": "f09365d8394cf4d5ad89f8775d2e07889e4f811e6a51a4f855c05f6914e84942",
+        "topLevelKeys": []
+      },
+      "pointer": "/toolCalls/1",
+      "providerVersion": null,
+      "recordRef": {
+        "evidence": 3,
+        "order": 3
+      },
+      "status": "none",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-11-15T10:30:07.000Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "agent"
+      },
+      "actorKey": "root",
+      "attributes": {},
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "timestamp": {
+          "state": "captured"
+        }
+      },
+      "kind": "source.unknown",
+      "payload": {
+        "nativeType": null,
+        "recordSha256": "f09365d8394cf4d5ad89f8775d2e07889e4f811e6a51a4f855c05f6914e84942",
+        "topLevelKeys": [
+          "name"
+        ]
+      },
+      "pointer": "/toolCalls/2",
+      "providerVersion": null,
+      "recordRef": {
+        "evidence": 3,
+        "order": 3
+      },
+      "status": "none",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-11-15T10:30:07.000Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "agent"
+      },
+      "actorKey": "root",
+      "attributes": {
+        "gemini-cli.message_type": "gemini"
+      },
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "inputs": {
+          "reason": "malformed-value",
+          "state": "partial"
+        },
+        "outputs": {
+          "state": "unknown"
+        },
+        "timestamp": {
+          "state": "captured"
+        }
+      },
+      "kind": "tool.requested",
+      "payload": {
+        "input": null,
+        "toolCallId": null,
+        "toolName": "read_file",
+        "toolNamespace": "builtin"
+      },
+      "pointer": "/toolCalls/3",
+      "providerVersion": null,
+      "recordRef": {
+        "evidence": 3,
+        "order": 3
+      },
+      "status": "none",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-11-15T10:30:07.000Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "agent"
+      },
+      "actorKey": "root",
+      "attributes": {
+        "gemini-cli.message_type": "gemini"
+      },
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "model": {
+          "state": "captured"
+        },
+        "timestamp": {
+          "state": "captured"
+        },
+        "tokens": {
+          "reason": "missing-in-record",
+          "state": "absent"
+        }
+      },
+      "kind": "model.usage",
+      "payload": {
+        "model": "m",
+        "scope": "message"
+      },
+      "pointer": "/tokens",
+      "providerVersion": null,
+      "recordRef": {
+        "evidence": 3,
+        "order": 3
+      },
+      "status": "none",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-11-15T10:30:07.000Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "user"
+      },
+      "actorKey": "user",
+      "attributes": {
+        "gemini-cli.message_type": "user"
+      },
+      "completeness": {
+        "actor": {
+          "state": "captured"
+        },
+        "content": {
+          "reason": "missing-in-record",
+          "state": "absent"
+        },
+        "timestamp": {
+          "reason": "missing-in-record",
+          "state": "absent"
+        }
+      },
+      "kind": "turn.started",
+      "payload": {
+        "prompt": null
+      },
+      "pointer": "/content",
+      "providerVersion": null,
+      "recordRef": {
+        "evidence": 9,
+        "order": 9
+      },
+      "status": "none",
+      "time": {
+        "origin": "none",
+        "status": "missing",
+        "value": null
+      }
+    }
+  ],
+  "warnings": [
+    {
+      "code": "unknown-record-type",
+      "detail": {
+        "reasonCode": "gm.unknown-record"
+      },
+      "severity": "warn",
+      "sourceSequence": 4
+    },
+    {
+      "code": "unknown-record-type",
+      "detail": {
+        "reasonCode": "gm.unknown-record"
+      },
+      "severity": "warn",
+      "sourceSequence": 5
+    },
+    {
+      "code": "unknown-record-type",
+      "detail": {
+        "reasonCode": "gm.unknown-record"
+      },
+      "severity": "warn",
+      "sourceSequence": 6
+    },
+    {
+      "code": "unknown-record-type",
+      "detail": {
+        "reasonCode": "gm.unknown-record"
+      },
+      "severity": "warn",
+      "sourceSequence": 7
+    },
+    {
+      "code": "unknown-record-type",
+      "detail": {
+        "reasonCode": "gm.unknown-record"
+      },
+      "severity": "warn",
+      "sourceSequence": 8
+    },
+    {
+      "code": "unknown-record-type",
+      "detail": {
+        "reasonCode": "gm.unknown-record"
+      },
+      "severity": "warn",
+      "sourceSequence": 10
+    },
+    {
+      "code": "unmapped-field",
+      "detail": {
+        "fieldCode": "gm.meta-fields",
+        "occurrences": 1
+      },
+      "severity": "info",
+      "sourceSequence": null
+    },
+    {
+      "code": "unmapped-field",
+      "detail": {
+        "fieldCode": "gm.set-messages-checkpoint",
+        "occurrences": 1
+      },
+      "severity": "info",
+      "sourceSequence": null
+    },
+    {
+      "code": "unmapped-field",
+      "detail": {
+        "fieldCode": "gm.thought-malformed",
+        "occurrences": 3
+      },
+      "severity": "info",
+      "sourceSequence": null
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "synthetic": true,
+  "verifiedAgainstRealOutput": false,
+  "provider": "codex-cli",
+  "derivedFrom": "docs/research/FORMAT-codex.md sections 2-5, 8 and 9 (rust-v0.169.0 and rust-v0.167.0 shapes), extended to cover each mapped record type",
+  "note": "All ids, paths and text are fake. No real session, ~/.codex file or user data was read. testedProviderVersions is empty: nothing here is verified against a real Codex CLI run.",
+  "expectedDir": "fixtures/expected/codex-cli/mvp",
+  "expectedKind": "adapter-level (drafts, dispositions, warnings); ImportResult goldens arrive with WP-A runImport",
+  "files": [
+    { "name": "rollout-paginated-golden.jsonl", "sourceKind": "codex-cli.rollout-jsonl", "kind": "golden", "covers": "paginated history_mode: ordinal, session_meta, task_started/complete/aborted, turn_context, response_item message/reasoning/function_call/local_shell_call/custom_tool_call(+outputs), item_completed UserMessage/AgentMessage/Reasoning/CommandExecution/FileChange, cumulative token_count, compacted, metadata and control lines, unknown types" },
+    { "name": "rollout-legacy-golden.jsonl", "sourceKind": "codex-cli.rollout-jsonl", "kind": "golden", "covers": "legacy history_mode (no ordinal): user_message, agent_message, agent_reasoning, patch_apply_end, classic shell header, later session_meta, task_complete with error" },
+    { "name": "rollout-hostile.jsonl", "sourceKind": "codex-cli.rollout-jsonl", "kind": "hostile", "covers": "markup and ANSI, malformed arguments, out-of-order and orphan results, missing result, wrong-typed fields, traversal/NUL/escaped-pointer paths, invalid and non-string timestamps, unknown types, non-object records, __proto__ keys, lone surrogate" },
+    { "name": "rollout-unsupported-history-mode.jsonl", "sourceKind": "codex-cli.rollout-jsonl", "kind": "detect", "covers": "unrecognized history_mode: detect verdict unsupported" },
+    { "name": "exec-golden.jsonl", "sourceKind": "codex-cli.exec-jsonl", "kind": "golden", "covers": "thread/turn lifecycle, command_execution ok/failed/declined, reasoning, file_change, mcp_tool_call ok/failed, collab_tool_call, web_search with duplicate id key, todo_list, item.updated, error item, cumulative usage, turn.failed, error" },
+    { "name": "exec-resume-golden.jsonl", "sourceKind": "codex-cli.exec-jsonl", "kind": "golden", "covers": "a second capture of the same thread (resume)" },
+    { "name": "exec-hostile.jsonl", "sourceKind": "codex-cli.exec-jsonl", "kind": "hostile", "covers": "markup and ANSI, started without completed, completed without started, wrong-typed fields, unknown item and record types, all-zero and negative usage, traversal and NUL paths, __proto__ keys, lone surrogate" }
+  ]
+}

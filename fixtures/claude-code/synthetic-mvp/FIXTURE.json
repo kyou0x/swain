@@ -1,0 +1,16 @@
+{
+  "synthetic": true,
+  "verifiedAgainstRealOutput": false,
+  "provider": "claude-code",
+  "derivedFrom": "docs/research/FORMAT-claude.md sections A (stream-json, SDK 0.3.325 shapes) and D.1/D.2 (synthetic examples), extended to cover each mapped record type",
+  "note": "All ids, paths and text are fake. No real session, ~/.claude file or user data was read. testedProviderVersions is empty: nothing here is verified against a real Claude Code run.",
+  "expectedDir": "fixtures/expected/claude-code/mvp",
+  "expectedKind": "adapter-level (drafts, dispositions, warnings); ImportResult goldens arrive with WP-A runImport",
+  "files": [
+    { "name": "stream-json-golden.jsonl", "sourceKind": "claude-code.stream-json", "kind": "golden", "covers": "init, replayed prompt, two lines sharing message.id, Bash/Edit(error)/Write/Agent tool calls, subagent lines via parent_tool_use_id, thinking, permission_denied, stream_event, status, result success with modelUsage and permission_denials" },
+    { "name": "stream-json-error.jsonl", "sourceKind": "claude-code.stream-json", "kind": "golden", "covers": "assistant error attribute, api_retry, error_max_turns result with errors and terminal_reason" },
+    { "name": "stream-json-hostile.jsonl", "sourceKind": "claude-code.stream-json", "kind": "hostile", "covers": "markup and ANSI in tool names, content and cwd, wrong-typed fields, out-of-order and orphan results, missing result, traversal and NUL paths, unknown and non-object records, __proto__ keys, invalid usage counters, lone surrogate" },
+    { "name": "transcript-golden.jsonl", "sourceKind": "claude-code.transcript-jsonl", "kind": "golden", "covers": "COMMUNITY raw-line shape: summary, user, assistant tool_use, toolUseResult, unknown system subtype, file-history-snapshot, isMeta, isSidechain, unlisted field" },
+    { "name": "transcript-hostile.jsonl", "sourceKind": "claude-code.transcript-jsonl", "kind": "hostile", "covers": "markup content, wrong types, progress and empty records, empty assistant lines sharing a message.id" }
+  ]
+}

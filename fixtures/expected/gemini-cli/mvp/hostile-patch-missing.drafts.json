@@ -1,0 +1,274 @@
+{
+  "dispositions": [
+    {
+      "into": null,
+      "kind": "control",
+      "sourceSequence": 2
+    },
+    {
+      "into": null,
+      "kind": "control",
+      "sourceSequence": 3
+    },
+    {
+      "into": 1,
+      "kind": "control",
+      "sourceSequence": 4
+    }
+  ],
+  "drafts": [
+    {
+      "actor": {
+        "role": "unknown"
+      },
+      "actorKey": "root",
+      "attributes": {},
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "timestamp": {
+          "reason": "missing-in-record",
+          "state": "absent"
+        }
+      },
+      "kind": "source.unknown",
+      "payload": {
+        "nativeType": null,
+        "recordSha256": "6367078f24be03c4302ec74838fcc85104001dac9b719a928cf10901377f0a73",
+        "topLevelKeys": [
+          "$patch"
+        ]
+      },
+      "pointer": "",
+      "providerVersion": null,
+      "recordRef": {
+        "evidence": 5,
+        "order": 5
+      },
+      "status": "none",
+      "time": {
+        "origin": "none",
+        "status": "missing",
+        "value": null
+      }
+    },
+    {
+      "actor": {
+        "role": "runtime"
+      },
+      "actorKey": "runtime",
+      "attributes": {},
+      "completeness": {
+        "actor": {
+          "state": "captured"
+        },
+        "timestamp": {
+          "state": "captured"
+        }
+      },
+      "kind": "session.started",
+      "nativeSessionId": "a1b2c3d4-0000-4000-8000-000000000001",
+      "payload": {
+        "nativeSessionId": "a1b2c3d4-0000-4000-8000-000000000001",
+        "trigger": "unknown"
+      },
+      "pointer": "",
+      "providerVersion": null,
+      "recordRef": {
+        "evidence": 0,
+        "order": 0
+      },
+      "status": "none",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-11-15T10:30:00.000Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "agent"
+      },
+      "actorKey": "root",
+      "attributes": {
+        "gemini-cli.message_type": "gemini"
+      },
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "content": {
+          "state": "captured"
+        },
+        "internalReasoning": {
+          "reason": "provider-does-not-expose",
+          "state": "unavailable"
+        },
+        "timestamp": {
+          "state": "captured"
+        }
+      },
+      "kind": "message.observed",
+      "payload": {
+        "channel": "text",
+        "content": {
+          "byteLength": 4,
+          "encoding": "utf8",
+          "retention": "hash-only",
+          "sha256": "79f076abdd19a752db7267bfff2f9022161d120dea919fdaca2ffdfc24ca8c96"
+        },
+        "role": "assistant"
+      },
+      "pointer": "/content",
+      "providerVersion": null,
+      "recordRef": {
+        "evidence": 1,
+        "order": 1
+      },
+      "status": "none",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-11-15T10:30:05.000Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "agent"
+      },
+      "actorKey": "root",
+      "attributes": {
+        "gemini-cli.message_type": "gemini",
+        "gemini-cli.tool_status": "success"
+      },
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "inputs": {
+          "state": "captured"
+        },
+        "outputs": {
+          "state": "unknown"
+        },
+        "timestamp": {
+          "state": "captured"
+        }
+      },
+      "correlation": {
+        "anchor": "t1"
+      },
+      "kind": "tool.requested",
+      "payload": {
+        "input": {
+          "byteLength": 18,
+          "encoding": "jcs-json",
+          "retention": "hash-only",
+          "sha256": "e4576acfc53f9a71135e812b193913ebeb6c4021620357b42839435f0bca6bc7"
+        },
+        "toolCallId": "t1",
+        "toolName": "read_file",
+        "toolNamespace": "builtin"
+      },
+      "pointer": "/toolCalls/0",
+      "providerVersion": null,
+      "recordRef": {
+        "evidence": 1,
+        "order": 1
+      },
+      "status": "none",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-11-15T10:30:05.000Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "agent"
+      },
+      "actorKey": "root",
+      "attributes": {
+        "gemini-cli.message_type": "gemini",
+        "gemini-cli.tool_status": "success"
+      },
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "causality": {
+          "state": "captured"
+        },
+        "inputs": {
+          "state": "unknown"
+        },
+        "outputs": {
+          "state": "captured"
+        },
+        "timestamp": {
+          "state": "captured"
+        }
+      },
+      "correlation": {
+        "refs": [
+          {
+            "key": "t1",
+            "rel": "result-of"
+          }
+        ]
+      },
+      "kind": "tool.completed",
+      "payload": {
+        "output": {
+          "byteLength": 5,
+          "encoding": "utf8",
+          "retention": "hash-only",
+          "sha256": "a116c9ed46d6207734a43317d30fd88f52ac8634c37d904bbf4e41d865f90475"
+        },
+        "toolCallId": "t1",
+        "toolName": "read_file"
+      },
+      "pointer": "/toolCalls/0/result",
+      "providerVersion": null,
+      "recordRef": {
+        "evidence": 1,
+        "order": 1
+      },
+      "status": "success",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-11-15T10:30:06.000Z"
+      }
+    }
+  ],
+  "warnings": [
+    {
+      "code": "unknown-record-type",
+      "detail": {
+        "reasonCode": "gm.unknown-record"
+      },
+      "severity": "warn",
+      "sourceSequence": 5
+    },
+    {
+      "code": "unmapped-field",
+      "detail": {
+        "fieldCode": "gm.meta-fields",
+        "occurrences": 1
+      },
+      "severity": "info",
+      "sourceSequence": null
+    },
+    {
+      "code": "unmapped-field",
+      "detail": {
+        "fieldCode": "gm.patch-unknown-id",
+        "occurrences": 3
+      },
+      "severity": "info",
+      "sourceSequence": null
+    }
+  ]
+}

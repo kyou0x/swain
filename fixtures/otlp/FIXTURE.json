@@ -1,0 +1,6 @@
+{
+  "synthetic": true,
+  "verifiedAgainstRealOutput": false,
+  "description": "Synthetic OTLP/JSON requests for @swain/otlp (SPEC-003 N1.2). Hand-written from the documented conventions; not captured from any real exporter or agent.",
+  "note": "IDs, hosts, models and prompts are invented. hostile/ holds small static cases; huge cases (50,001 spans, 10,000 attributes, deep nesting) are generated inside the tests."
+}

@@ -1,0 +1,368 @@
+{
+  "info": {
+    "id": "ses_fake01",
+    "slug": "fake-slug",
+    "projectID": "proj_fake01",
+    "directory": "[redacted:directory:ses_fake01]",
+    "path": "",
+    "title": "[redacted:title:ses_fake01]",
+    "version": "1.19.5",
+    "summary": {
+      "additions": 1,
+      "deletions": 1,
+      "files": 1
+    },
+    "cost": 0.0123,
+    "tokens": {
+      "input": 1500,
+      "output": 200,
+      "reasoning": 50,
+      "cache": {
+        "read": 1000,
+        "write": 300
+      }
+    },
+    "agent": "build",
+    "model": {
+      "id": "fake-model",
+      "providerID": "fake-provider"
+    },
+    "time": {
+      "created": 1790000000000,
+      "updated": 1790000060000
+    }
+  },
+  "messages": [
+    {
+      "info": {
+        "id": "msg_user01",
+        "sessionID": "ses_fake01",
+        "role": "user",
+        "time": {
+          "created": 1790000000000
+        },
+        "agent": "build",
+        "model": {
+          "providerID": "fake-provider",
+          "modelID": "fake-model"
+        }
+      },
+      "parts": [
+        {
+          "id": "prt_user01a",
+          "sessionID": "ses_fake01",
+          "messageID": "msg_user01",
+          "type": "text",
+          "text": "[redacted:text:prt_user01a]"
+        },
+        {
+          "id": "prt_user01b",
+          "sessionID": "ses_fake01",
+          "messageID": "msg_user01",
+          "type": "text",
+          "text": "(injected context)",
+          "synthetic": true
+        },
+        {
+          "id": "prt_user01c",
+          "sessionID": "ses_fake01",
+          "messageID": "msg_user01",
+          "type": "file",
+          "mime": "text/plain",
+          "filename": "greeting.txt",
+          "url": "file:///home/user/project/greeting.txt"
+        },
+        {
+          "id": "prt_user01d",
+          "sessionID": "ses_fake01",
+          "messageID": "msg_user01",
+          "type": "agent",
+          "name": "reviewer",
+          "source": {
+            "value": "@reviewer",
+            "start": 0,
+            "end": 9
+          }
+        },
+        {
+          "id": "prt_user01e",
+          "sessionID": "ses_fake01",
+          "messageID": "msg_user01",
+          "type": "subtask",
+          "prompt": "Review the diff",
+          "description": "Review",
+          "agent": "reviewer",
+          "model": {
+            "providerID": "fake-provider",
+            "modelID": "fake-model"
+          },
+          "command": "/review"
+        }
+      ]
+    },
+    {
+      "info": {
+        "id": "msg_asst01",
+        "sessionID": "ses_fake01",
+        "role": "assistant",
+        "time": {
+          "created": 1790000001000,
+          "completed": 1790000059000
+        },
+        "parentID": "msg_user01",
+        "modelID": "fake-model",
+        "providerID": "fake-provider",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "/home/user/project",
+          "root": "/home/user/project"
+        },
+        "cost": 0.0123,
+        "tokens": {
+          "total": 1750,
+          "input": 1500,
+          "output": 200,
+          "reasoning": 50,
+          "cache": {
+            "read": 1000,
+            "write": 300
+          }
+        },
+        "finish": "stop"
+      },
+      "parts": [
+        {
+          "id": "prt_asst01a",
+          "sessionID": "ses_fake01",
+          "messageID": "msg_asst01",
+          "type": "step-start",
+          "snapshot": "0000000000000000000000000000000000000001"
+        },
+        {
+          "id": "prt_asst01b",
+          "sessionID": "ses_fake01",
+          "messageID": "msg_asst01",
+          "type": "reasoning",
+          "text": "I should look at the file, fix the typo, then run tests.",
+          "time": {
+            "start": 1790000001100,
+            "end": 1790000002000
+          }
+        },
+        {
+          "id": "prt_asst01c",
+          "sessionID": "ses_fake01",
+          "messageID": "msg_asst01",
+          "type": "text",
+          "text": "I'll fix the typo now.",
+          "time": {
+            "start": 1790000002100,
+            "end": 1790000002500
+          }
+        },
+        {
+          "id": "prt_asst01d",
+          "sessionID": "ses_fake01",
+          "messageID": "msg_asst01",
+          "type": "tool",
+          "callID": "call_fake01",
+          "tool": "edit",
+          "state": {
+            "status": "completed",
+            "input": {
+              "redacted": "tool-input:prt_asst01d"
+            },
+            "output": "[redacted:tool-output:prt_asst01d]",
+            "title": "greeting.txt",
+            "metadata": {
+              "diagnostics": {},
+              "diff": "Index: /home/user/project/greeting.txt\n--- a/greeting.txt\n+++ b/greeting.txt\n@@ -1 +1 @@\n-Helo world\n+Hello world\n",
+              "filediff": {
+                "file": "/home/user/project/greeting.txt",
+                "patch": "@@ -1 +1 @@\n-Helo world\n+Hello world\n",
+                "additions": 1,
+                "deletions": 1
+              }
+            },
+            "time": {
+              "start": 1790000003000,
+              "end": 1790000003200
+            }
+          }
+        },
+        {
+          "id": "prt_asst01e",
+          "sessionID": "ses_fake01",
+          "messageID": "msg_asst01",
+          "type": "tool",
+          "callID": "call_fake02",
+          "tool": "bash",
+          "state": {
+            "status": "completed",
+            "input": {
+              "command": "npm test",
+              "workdir": "/home/user/project"
+            },
+            "output": "PASS  tests/greeting.test.js\nTests: 1 passed, 1 total\n",
+            "title": "npm test",
+            "metadata": {
+              "output": "PASS",
+              "exit": 0,
+              "truncated": false
+            },
+            "time": {
+              "start": 1790000004000,
+              "end": 1790000009000
+            }
+          }
+        },
+        {
+          "id": "prt_asst01f",
+          "sessionID": "ses_fake01",
+          "messageID": "msg_asst01",
+          "type": "tool",
+          "callID": "call_fake03",
+          "tool": "read",
+          "state": {
+            "status": "error",
+            "input": {
+              "filePath": "/home/user/project/missing.txt"
+            },
+            "error": "File not found: /home/user/project/missing.txt",
+            "time": {
+              "start": 1790000010000,
+              "end": 1790000010050
+            }
+          }
+        },
+        {
+          "id": "prt_asst01g",
+          "sessionID": "ses_fake01",
+          "messageID": "msg_asst01",
+          "type": "tool",
+          "callID": "call_fake04",
+          "tool": "grep",
+          "state": {
+            "status": "pending",
+            "input": {},
+            "raw": "{\"pattern\":\"colo"
+          }
+        },
+        {
+          "id": "prt_asst01h",
+          "sessionID": "ses_fake01",
+          "messageID": "msg_asst01",
+          "type": "tool",
+          "callID": "call_fake05",
+          "tool": "glob",
+          "state": {
+            "status": "running",
+            "input": {
+              "pattern": "**/*.txt"
+            },
+            "time": {
+              "start": 1790000011000
+            }
+          }
+        },
+        {
+          "id": "prt_asst01i",
+          "sessionID": "ses_fake01",
+          "messageID": "msg_asst01",
+          "type": "tool",
+          "callID": "call_fake06",
+          "tool": "write",
+          "state": {
+            "status": "completed",
+            "input": {
+              "filePath": "/home/user/project/new.txt",
+              "content": "x"
+            },
+            "output": "Wrote file successfully.",
+            "title": "new.txt",
+            "metadata": {
+              "filepath": "/home/user/project/new.txt",
+              "exists": false,
+              "diagnostics": {}
+            },
+            "time": {
+              "start": 1790000012000,
+              "end": 1790000012100
+            }
+          }
+        },
+        {
+          "id": "prt_asst01j",
+          "sessionID": "ses_fake01",
+          "messageID": "msg_asst01",
+          "type": "step-finish",
+          "reason": "stop",
+          "snapshot": "0000000000000000000000000000000000000002",
+          "cost": 0.0123,
+          "tokens": {
+            "total": 1750,
+            "input": 1500,
+            "output": 200,
+            "reasoning": 50,
+            "cache": {
+              "read": 1000,
+              "write": 300
+            }
+          }
+        },
+        {
+          "id": "prt_asst01k",
+          "sessionID": "ses_fake01",
+          "messageID": "msg_asst01",
+          "type": "patch",
+          "hash": "0000000000000000000000000000000000000002",
+          "files": [
+            "/home/user/project/greeting.txt"
+          ]
+        },
+        {
+          "id": "prt_asst01l",
+          "sessionID": "ses_fake01",
+          "messageID": "msg_asst01",
+          "type": "snapshot",
+          "snapshot": "0000000000000000000000000000000000000003"
+        },
+        {
+          "id": "prt_asst01m",
+          "sessionID": "ses_fake01",
+          "messageID": "msg_asst01",
+          "type": "retry",
+          "attempt": 2,
+          "error": {
+            "name": "APIError",
+            "data": {
+              "message": "rate limited (example)",
+              "statusCode": 429,
+              "isRetryable": true
+            }
+          },
+          "time": {
+            "created": 1790000013000
+          }
+        },
+        {
+          "id": "prt_asst01n",
+          "sessionID": "ses_fake01",
+          "messageID": "msg_asst01",
+          "type": "compaction",
+          "auto": true,
+          "overflow": false,
+          "tail_start_id": "msg_user01"
+        },
+        {
+          "id": "prt_asst01o",
+          "sessionID": "ses_fake01",
+          "messageID": "msg_asst01",
+          "type": "future-part-type",
+          "novel": 1
+        }
+      ]
+    }
+  ]
+}

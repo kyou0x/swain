@@ -1,0 +1,24 @@
+{"type":"thread.started","thread_id":"<script>alert(1)</script>"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"command_execution","command":"echo '<img src=x onerror=alert(1)>' \u001b[31m","aggregated_output":"\u001b]8;;http://x\u0007link\u001b[2J","exit_code":0,"status":"completed"}}
+{"type":"item.started","item":{"id":"item_1","type":"command_execution","command":"sleep 99","aggregated_output":"","exit_code":null,"status":"in_progress"}}
+{"type":"item.completed","item":{"id":"item_2","type":"command_execution","command":5,"aggregated_output":null,"exit_code":"0","status":7}}
+{"type":"item.completed","item":{"id":"item_3","type":"future_item","x":1}}
+{"type":"item.completed","item":"not an object"}
+{"type":"item.completed"}
+{"type":"item.started","item":{}}
+{"type":"item.completed","item":{"id":"item_4","type":"file_change","changes":[{"path":"../../etc/passwd","kind":"add"},{"path":"/home/user/a\u0000b","kind":"add"},5,{"kind":"add"}],"status":"completed"}}
+{"type":"item.completed","item":{"id":"item_5","type":"file_change","changes":"nope"}}
+{"type":"item.completed","item":{"id":"item_6","type":"mcp_tool_call","server":"s\"><svg onload=1>","tool":"t","arguments":"str","result":{"content":[]},"error":null,"status":"completed"}}
+{"type":"item.completed","item":{"id":"item_7","type":"agent_message","text":"lone \ud800 <script>"}}
+{"type":"item.completed","item":{"id":"item_8","type":"agent_message","text":9}}
+{"type":"turn.completed","usage":{"input_tokens":0,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":0,"reasoning_output_tokens":0}}
+{"type":"turn.completed","usage":{"input_tokens":-1,"output_tokens":"x"}}
+{"type":"turn.completed","usage":"none"}
+{"type":"turn.failed","error":5}
+{"type":"error","message":{"not":"string"}}
+{"type":"thread.future","id":1}
+{"type":5}
+[1]
+null
+{"type":"turn.started","__proto__":{"polluted":true},"constructor":{"prototype":{}}}

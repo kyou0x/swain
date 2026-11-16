@@ -1,0 +1,24 @@
+{
+  "resourceSpans": [
+    {
+      "scopeSpans": [
+        {
+          "spans": [
+            {
+              "traceId": "5b8efff798038103d269b633813fc60c",
+              "spanId": "00f067aa0ba902b7",
+              "name": "first",
+              "startTimeUnixNano": "1000"
+            },
+            {
+              "traceId": "5b8efff798038103d269b633813fc60c",
+              "spanId": "00f067aa0ba902b7",
+              "name": "second (different content)",
+              "startTimeUnixNano": "2000"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

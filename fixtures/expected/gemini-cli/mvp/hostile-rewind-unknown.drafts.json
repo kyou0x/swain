@@ -1,0 +1,114 @@
+{
+  "dispositions": [
+    {
+      "into": null,
+      "kind": "rewound",
+      "sourceSequence": 1
+    },
+    {
+      "into": null,
+      "kind": "rewound",
+      "sourceSequence": 2
+    },
+    {
+      "into": null,
+      "kind": "control",
+      "sourceSequence": 3
+    }
+  ],
+  "drafts": [
+    {
+      "actor": {
+        "role": "runtime"
+      },
+      "actorKey": "runtime",
+      "attributes": {},
+      "completeness": {
+        "actor": {
+          "state": "captured"
+        },
+        "timestamp": {
+          "state": "captured"
+        }
+      },
+      "kind": "session.started",
+      "nativeSessionId": "a1b2c3d4-0000-4000-8000-000000000001",
+      "payload": {
+        "nativeSessionId": "a1b2c3d4-0000-4000-8000-000000000001",
+        "trigger": "unknown"
+      },
+      "pointer": "",
+      "providerVersion": null,
+      "recordRef": {
+        "evidence": 0,
+        "order": 0
+      },
+      "status": "none",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-11-15T10:30:00.000Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "user"
+      },
+      "actorKey": "user",
+      "attributes": {
+        "gemini-cli.message_type": "user"
+      },
+      "completeness": {
+        "actor": {
+          "state": "captured"
+        },
+        "content": {
+          "state": "captured"
+        },
+        "timestamp": {
+          "state": "captured"
+        }
+      },
+      "kind": "turn.started",
+      "payload": {
+        "prompt": {
+          "byteLength": 5,
+          "encoding": "utf8",
+          "retention": "hash-only",
+          "sha256": "f39592393ef0859cb196a52693d2cea00fb2df784b3c04ae54aa7cadb8e562f8"
+        }
+      },
+      "pointer": "/content",
+      "providerVersion": null,
+      "recordRef": {
+        "evidence": 4,
+        "order": 4
+      },
+      "status": "none",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-11-15T10:30:07.000Z"
+      }
+    }
+  ],
+  "warnings": [
+    {
+      "code": "unmapped-field",
+      "detail": {
+        "reasonCode": "gm.rewind-unknown-id"
+      },
+      "severity": "warn",
+      "sourceSequence": 3
+    },
+    {
+      "code": "unmapped-field",
+      "detail": {
+        "fieldCode": "gm.meta-fields",
+        "occurrences": 1
+      },
+      "severity": "info",
+      "sourceSequence": null
+    }
+  ]
+}

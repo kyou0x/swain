@@ -1,0 +1,16 @@
+{
+  "synthetic": true,
+  "verifiedAgainstRealOutput": false,
+  "provider": "opencode",
+  "derivedFrom": "docs/research/FORMAT-opencode.md (source tag v1.19.5, section 8 synthetic example), extended by hand to cover each mapped part type",
+  "providerVersionObserved": null,
+  "note": "No file here comes from a real opencode export. Paths, ids and text are invented. Hostile files are hand-written to probe the adapter.",
+  "files": {
+    "export-golden.json": { "adapter": "opencode.session-export", "purpose": "golden: user/assistant messages; text, reasoning, tool (all four statuses), step-start/finish, patch, subtask, agent, file, snapshot, retry, compaction, unknown part; message error; empty-parts assistant" },
+    "export-empty.json": { "adapter": "opencode.session-export", "purpose": "export with zero messages" },
+    "export-sanitized.json": { "adapter": "opencode.session-export", "purpose": "shape produced by `opencode export --sanitize` (placeholders)" },
+    "hostile-content.json": { "adapter": "opencode.session-export", "purpose": "HTML, ANSI/OSC, bidi, __proto__, secret-shaped strings, path traversal, wrong types, non-object parts and elements" },
+    "hostile-missing-messages.json": { "adapter": "opencode.session-export", "purpose": "no /messages" },
+    "hostile-messages-wrong-type.json": { "adapter": "opencode.session-export", "purpose": "/messages is not an array" }
+  }
+}

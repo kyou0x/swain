@@ -1,0 +1,18 @@
+{
+  "resourceSpans": [
+    {
+      "scopeSpans": [
+        {
+          "spans": [
+            {
+              "traceId": "5b8efff798038103d269b633813fc60c",
+              "spanId": "00f067aa0ba902b7",
+              "name": "x",
+              "startTimeUnixNano": "9223372036854775808"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

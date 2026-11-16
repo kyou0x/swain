@@ -1,0 +1,698 @@
+{
+  "dispositions": [],
+  "drafts": [
+    {
+      "actor": {
+        "role": "unknown"
+      },
+      "actorKey": "root",
+      "attributes": {},
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "timestamp": {
+          "reason": "missing-in-record",
+          "state": "absent"
+        }
+      },
+      "kind": "source.unknown",
+      "payload": {
+        "nativeType": null,
+        "recordSha256": "8f009a812104b4f1fd2b2810356271682c5499f7431b352726e0c849f64c421c",
+        "topLevelKeys": [
+          "\u001b[31mkey<script>",
+          "$weird"
+        ]
+      },
+      "pointer": "",
+      "providerVersion": null,
+      "recordRef": {
+        "evidence": 5,
+        "order": 5
+      },
+      "status": "none",
+      "time": {
+        "origin": "none",
+        "status": "missing",
+        "value": null
+      }
+    },
+    {
+      "actor": {
+        "role": "runtime"
+      },
+      "actorKey": "runtime",
+      "attributes": {},
+      "completeness": {
+        "actor": {
+          "state": "captured"
+        },
+        "timestamp": {
+          "state": "captured"
+        }
+      },
+      "kind": "session.started",
+      "nativeSessionId": "a1b2c3d4-0000-4000-8000-000000000001",
+      "payload": {
+        "nativeSessionId": "a1b2c3d4-0000-4000-8000-000000000001",
+        "trigger": "unknown"
+      },
+      "pointer": "",
+      "providerVersion": null,
+      "recordRef": {
+        "evidence": 0,
+        "order": 0
+      },
+      "status": "none",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-11-15T10:30:00.000Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "user"
+      },
+      "actorKey": "user",
+      "attributes": {
+        "gemini-cli.message_type": "user"
+      },
+      "completeness": {
+        "actor": {
+          "state": "captured"
+        },
+        "content": {
+          "state": "captured"
+        },
+        "timestamp": {
+          "state": "captured"
+        }
+      },
+      "kind": "turn.started",
+      "payload": {
+        "prompt": {
+          "byteLength": 122,
+          "encoding": "utf8",
+          "retention": "hash-only",
+          "sha256": "763a7fc6baa4b6189159bb8bb16f440803c7bfd75b623ed39a6e1101c45520aa"
+        }
+      },
+      "pointer": "/content",
+      "providerVersion": null,
+      "recordRef": {
+        "evidence": 1,
+        "order": 1
+      },
+      "status": "none",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-11-15T10:30:05.000Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "agent"
+      },
+      "actorKey": "root",
+      "attributes": {
+        "gemini-cli.message_type": "gemini",
+        "gemini-cli.thought_index": 0,
+        "gemini-cli.thought_source": "summary"
+      },
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "content": {
+          "state": "captured"
+        },
+        "internalReasoning": {
+          "reason": "provider-does-not-expose",
+          "state": "unavailable"
+        },
+        "timestamp": {
+          "state": "captured"
+        }
+      },
+      "kind": "message.observed",
+      "payload": {
+        "channel": "reasoning",
+        "content": {
+          "byteLength": 73,
+          "encoding": "jcs-json",
+          "retention": "hash-only",
+          "sha256": "925f70b6842e75904f7fec138506f953174e32760eca2dafa3016578b7be6fa2"
+        },
+        "role": "assistant"
+      },
+      "pointer": "/thoughts/0",
+      "providerVersion": null,
+      "recordRef": {
+        "evidence": 2,
+        "order": 2
+      },
+      "status": "none",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-11-15T10:30:06.500Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "agent"
+      },
+      "actorKey": "root",
+      "attributes": {
+        "gemini-cli.message_type": "gemini"
+      },
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "content": {
+          "state": "captured"
+        },
+        "internalReasoning": {
+          "reason": "provider-does-not-expose",
+          "state": "unavailable"
+        },
+        "timestamp": {
+          "state": "captured"
+        }
+      },
+      "kind": "message.observed",
+      "payload": {
+        "channel": "text",
+        "content": {
+          "byteLength": 48,
+          "encoding": "utf8",
+          "retention": "hash-only",
+          "sha256": "29ab71a0fedcd76c628a0ef32a1e8c35e338f96c3d2437e9699e459b310f450b"
+        },
+        "role": "assistant"
+      },
+      "pointer": "/content",
+      "providerVersion": null,
+      "recordRef": {
+        "evidence": 2,
+        "order": 2
+      },
+      "status": "none",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-11-15T10:30:06.000Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "agent"
+      },
+      "actorKey": "root",
+      "attributes": {
+        "gemini-cli.message_type": "gemini",
+        "gemini-cli.tool_status": "success"
+      },
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "inputs": {
+          "state": "captured"
+        },
+        "outputs": {
+          "state": "unknown"
+        },
+        "timestamp": {
+          "state": "captured"
+        }
+      },
+      "correlation": {
+        "anchor": "tc-1"
+      },
+      "kind": "tool.requested",
+      "payload": {
+        "input": {
+          "byteLength": 80,
+          "encoding": "jcs-json",
+          "retention": "hash-only",
+          "sha256": "4d24110c0084049565be44c4b77b1bf82cb02733e7799b5bfa8f45197d820655"
+        },
+        "toolCallId": "tc-1",
+        "toolName": "run_shell_command<script>alert(1)</script>\u001b[31m‮",
+        "toolNamespace": "unknown"
+      },
+      "pointer": "/toolCalls/0",
+      "providerVersion": null,
+      "recordRef": {
+        "evidence": 2,
+        "order": 2
+      },
+      "status": "none",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-11-15T10:30:06.000Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "agent"
+      },
+      "actorKey": "root",
+      "attributes": {
+        "gemini-cli.message_type": "gemini",
+        "gemini-cli.tool_status": "success"
+      },
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "causality": {
+          "state": "captured"
+        },
+        "inputs": {
+          "state": "unknown"
+        },
+        "outputs": {
+          "state": "captured"
+        },
+        "timestamp": {
+          "state": "captured"
+        }
+      },
+      "correlation": {
+        "refs": [
+          {
+            "key": "tc-1",
+            "rel": "result-of"
+          }
+        ]
+      },
+      "kind": "tool.completed",
+      "payload": {
+        "output": {
+          "byteLength": 57,
+          "encoding": "utf8",
+          "retention": "hash-only",
+          "sha256": "1bb7c8b981b9830a7b0098d5a4cb2283ef2eda3ee31926f4de50db96fba1e585"
+        },
+        "toolCallId": "tc-1",
+        "toolName": "run_shell_command<script>alert(1)</script>\u001b[31m‮"
+      },
+      "pointer": "/toolCalls/0/result",
+      "providerVersion": null,
+      "recordRef": {
+        "evidence": 2,
+        "order": 2
+      },
+      "status": "success",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-11-15T10:30:07.000Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "agent"
+      },
+      "actorKey": "root",
+      "attributes": {
+        "gemini-cli.message_type": "gemini",
+        "gemini-cli.tool_status": "success"
+      },
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "inputs": {
+          "state": "captured"
+        },
+        "outputs": {
+          "state": "unknown"
+        },
+        "timestamp": {
+          "state": "captured"
+        }
+      },
+      "correlation": {
+        "anchor": "tc-2"
+      },
+      "kind": "tool.requested",
+      "payload": {
+        "input": {
+          "byteLength": 46,
+          "encoding": "jcs-json",
+          "retention": "hash-only",
+          "sha256": "25673acd46bb63730e4032c3644b93acf0d4aefdeb21d252e9f5e78c417febbb"
+        },
+        "toolCallId": "tc-2",
+        "toolName": "write_file",
+        "toolNamespace": "builtin"
+      },
+      "pointer": "/toolCalls/1",
+      "providerVersion": null,
+      "recordRef": {
+        "evidence": 2,
+        "order": 2
+      },
+      "status": "none",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-11-15T10:30:06.000Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "agent"
+      },
+      "actorKey": "root",
+      "attributes": {
+        "gemini-cli.message_type": "gemini",
+        "gemini-cli.tool_status": "success"
+      },
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "causality": {
+          "state": "captured"
+        },
+        "inputs": {
+          "state": "unknown"
+        },
+        "outputs": {
+          "state": "captured"
+        },
+        "timestamp": {
+          "state": "captured"
+        }
+      },
+      "correlation": {
+        "refs": [
+          {
+            "key": "tc-2",
+            "rel": "result-of"
+          }
+        ]
+      },
+      "kind": "tool.completed",
+      "payload": {
+        "output": {
+          "byteLength": 2,
+          "encoding": "jcs-json",
+          "retention": "hash-only",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "toolCallId": "tc-2",
+        "toolName": "write_file"
+      },
+      "pointer": "/toolCalls/1/result",
+      "providerVersion": null,
+      "recordRef": {
+        "evidence": 2,
+        "order": 2
+      },
+      "status": "success",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-11-15T10:30:08.000Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "agent"
+      },
+      "actorKey": "root",
+      "attributes": {
+        "gemini-cli.message_type": "gemini",
+        "gemini-cli.tool_status": "success"
+      },
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "timestamp": {
+          "state": "captured"
+        }
+      },
+      "kind": "file.changed",
+      "payload": {
+        "basis": "derived-from-tool-result",
+        "changeKind": "unknown",
+        "diff": null,
+        "path": "../../etc/passwd",
+        "viaToolCallId": "tc-2"
+      },
+      "pointer": "/toolCalls/1/args/file_path",
+      "providerVersion": null,
+      "recordRef": {
+        "evidence": 2,
+        "order": 2
+      },
+      "status": "success",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-11-15T10:30:08.000Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "agent"
+      },
+      "actorKey": "root",
+      "attributes": {
+        "gemini-cli.message_type": "gemini",
+        "gemini-cli.tool_status": "success"
+      },
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "inputs": {
+          "state": "captured"
+        },
+        "outputs": {
+          "state": "unknown"
+        },
+        "timestamp": {
+          "state": "captured"
+        }
+      },
+      "correlation": {
+        "anchor": "tc-3"
+      },
+      "kind": "tool.requested",
+      "payload": {
+        "input": {
+          "byteLength": 43,
+          "encoding": "jcs-json",
+          "retention": "hash-only",
+          "sha256": "5b70e5bdaeb541e713b9ac31c302d388fcf2282d63b90a6d72fc11e82c25ac96"
+        },
+        "toolCallId": "tc-3",
+        "toolName": "write_file",
+        "toolNamespace": "builtin"
+      },
+      "pointer": "/toolCalls/2",
+      "providerVersion": null,
+      "recordRef": {
+        "evidence": 2,
+        "order": 2
+      },
+      "status": "none",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-11-15T10:30:06.000Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "agent"
+      },
+      "actorKey": "root",
+      "attributes": {
+        "gemini-cli.message_type": "gemini",
+        "gemini-cli.tool_status": "success"
+      },
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "causality": {
+          "state": "captured"
+        },
+        "inputs": {
+          "state": "unknown"
+        },
+        "outputs": {
+          "state": "captured"
+        },
+        "timestamp": {
+          "state": "captured"
+        }
+      },
+      "correlation": {
+        "refs": [
+          {
+            "key": "tc-3",
+            "rel": "result-of"
+          }
+        ]
+      },
+      "kind": "tool.completed",
+      "payload": {
+        "output": {
+          "byteLength": 2,
+          "encoding": "jcs-json",
+          "retention": "hash-only",
+          "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "toolCallId": "tc-3",
+        "toolName": "write_file"
+      },
+      "pointer": "/toolCalls/2/result",
+      "providerVersion": null,
+      "recordRef": {
+        "evidence": 2,
+        "order": 2
+      },
+      "status": "success",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-11-15T10:30:09.000Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "runtime"
+      },
+      "actorKey": "runtime",
+      "attributes": {
+        "gemini-cli.message_type": "info"
+      },
+      "completeness": {
+        "actor": {
+          "state": "captured"
+        },
+        "content": {
+          "state": "captured"
+        },
+        "internalReasoning": {
+          "reason": "provider-does-not-expose",
+          "state": "unavailable"
+        },
+        "timestamp": {
+          "state": "captured"
+        }
+      },
+      "kind": "message.observed",
+      "payload": {
+        "channel": "notification",
+        "content": {
+          "byteLength": 5,
+          "encoding": "utf8",
+          "retention": "hash-only",
+          "sha256": "1cafa6d851c65817d04c841673d025dcf4ed498435407058d3a36608d17e32b6"
+        },
+        "role": "system"
+      },
+      "pointer": "/content",
+      "providerVersion": null,
+      "recordRef": {
+        "evidence": 3,
+        "order": 3
+      },
+      "status": "none",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-11-15T10:30:10.000Z"
+      }
+    },
+    {
+      "actor": {
+        "role": "unknown"
+      },
+      "actorKey": "root",
+      "attributes": {},
+      "completeness": {
+        "actor": {
+          "state": "unknown"
+        },
+        "timestamp": {
+          "state": "captured"
+        }
+      },
+      "kind": "source.unknown",
+      "payload": {
+        "nativeType": "gemini\u001b[0m<b>",
+        "recordSha256": "af393adf5208c3cdd5e4290c3ba9de5647b5daa2cb18c44aab3db224a99f9e04",
+        "topLevelKeys": [
+          "content",
+          "id",
+          "timestamp",
+          "type"
+        ]
+      },
+      "pointer": "",
+      "providerVersion": null,
+      "recordRef": {
+        "evidence": 4,
+        "order": 4
+      },
+      "status": "none",
+      "time": {
+        "origin": "source",
+        "status": "valid",
+        "value": "2026-11-15T10:30:11.000Z"
+      }
+    }
+  ],
+  "warnings": [
+    {
+      "code": "unknown-record-type",
+      "detail": {
+        "reasonCode": "gm.unknown-record"
+      },
+      "severity": "warn",
+      "sourceSequence": 5
+    },
+    {
+      "code": "unknown-record-type",
+      "detail": {
+        "reasonCode": "gm.unknown-message-type"
+      },
+      "severity": "warn",
+      "sourceSequence": 4
+    },
+    {
+      "code": "unmapped-field",
+      "detail": {
+        "fieldCode": "gm.message-extra-key",
+        "occurrences": 1
+      },
+      "severity": "info",
+      "sourceSequence": null
+    },
+    {
+      "code": "unmapped-field",
+      "detail": {
+        "fieldCode": "gm.meta-fields",
+        "occurrences": 1
+      },
+      "severity": "info",
+      "sourceSequence": null
+    }
+  ]
+}

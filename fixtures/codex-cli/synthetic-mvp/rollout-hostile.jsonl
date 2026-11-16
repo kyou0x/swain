@@ -1,0 +1,35 @@
+{"timestamp":"2026-11-15T09:00:00.000Z","ordinal":0,"type":"session_meta","payload":{"id":"00000000-0000-4000-8000-000000000001","timestamp":"2026-11-15T09:00:00.000Z","cwd":"/home/user/<script>alert(1)</script>","cli_version":"9.9.9","source":"<img src=x>","history_mode":"paginated"}}
+{"timestamp":"2026-11-15T09:00:01.000Z","ordinal":1,"type":"response_item","payload":{"type":"function_call","name":"<script>alert(1)</script>","arguments":"{not json","call_id":"call_h1"}}
+{"timestamp":"2026-11-15T09:00:02.000Z","ordinal":2,"type":"response_item","payload":{"type":"function_call","name":{"a":1},"arguments":{"obj":true}}}
+{"timestamp":"2026-11-15T09:00:03.000Z","ordinal":3,"type":"response_item","payload":{"type":"function_call_output","call_id":"call_h1","output":"\u001b[2J\u001b]8;;http://x\u0007<b>out</b>\nProcess exited with code 7\n"}}
+{"timestamp":"2026-11-15T09:00:04.000Z","ordinal":4,"type":"response_item","payload":{"type":"function_call_output","call_id":"call_late","output":[{"type":"input_text","text":"Process exited with code 0"}]}}
+{"timestamp":"2026-11-15T09:00:05.000Z","ordinal":5,"type":"response_item","payload":{"type":"function_call","name":"exec_command","arguments":"{\"cmd\":\"echo late\"}","call_id":"call_late"}}
+{"timestamp":"2026-11-15T09:00:06.000Z","ordinal":6,"type":"response_item","payload":{"type":"function_call","name":"exec_command","arguments":"{\"cmd\":\"sleep 9\"}","call_id":"call_nores"}}
+{"timestamp":"2026-11-15T09:00:07.000Z","ordinal":7,"type":"response_item","payload":{"type":"function_call_output","output":"Exit code: 99999999999"}}
+{"timestamp":"2026-11-15T09:00:08.000Z","ordinal":8,"type":"response_item","payload":{"type":"custom_tool_call","call_id":"call_h3","name":"apply_patch","input":5}}
+{"timestamp":"2026-11-15T09:00:09.000Z","ordinal":9,"type":"response_item","payload":{"type":"message","role":"alien","content":"nope"}}
+{"timestamp":"2026-11-15T09:00:10.000Z","ordinal":10,"type":"response_item","payload":{"type":"message","role":"assistant","content":[{"type":"input_image","image_url":"data:x"}]}}
+{"timestamp":"2026-11-15T09:00:11.000Z","ordinal":11,"type":"response_item","payload":{"type":"message","role":"assistant","content":[{"type":"output_text","text":"lone \ud800 surrogate <script>"}]}}
+{"timestamp":"2026-11-15T09:00:12.000Z","ordinal":12,"type":"event_msg","payload":{"type":"item_completed","item":{"type":"WeirdFuture","id":"x"}}}
+{"timestamp":"2026-11-15T09:00:13.000Z","ordinal":13,"type":"event_msg","payload":{"type":"item_completed","item":"not an object"}}
+{"timestamp":"2026-11-15T09:00:14.000Z","ordinal":14,"type":"event_msg","payload":{"type":"item_completed","thread_id":"00000000-0000-4000-8000-000000000001","turn_id":"00000000-0000-4000-8000-0000000000a1","item":{"type":"CommandExecution","id":"unknown_call","command":["x"],"status":"weird","aggregated_output":5,"exit_code":"0"}}}
+{"timestamp":"2026-11-15T09:00:15.000Z","ordinal":15,"type":"event_msg","payload":{"type":"item_completed","thread_id":"00000000-0000-4000-8000-000000000001","turn_id":"00000000-0000-4000-8000-0000000000a1","item":{"type":"FileChange","id":"call_h1","changes":{"../../etc/passwd":{"type":"add","content":"x"},"/home/user/a\u0000b":{"type":"add","content":"y"},"/home/user/ok.txt":{"type":"update","unified_diff":"d"},"a/b~c":{"type":"delete","content":"z"}},"status":"completed"}}}
+{"timestamp":"2026-11-15T09:00:16.000Z","ordinal":16,"type":"event_msg","payload":{"type":"item_completed","item":{"type":"FileChange","id":"x","changes":[1,2]}}}
+{"timestamp":"2026-11-15T09:00:17.000Z","ordinal":17,"type":"event_msg","payload":{"type":"token_count","info":"nope","rate_limits":null}}
+{"timestamp":"2026-11-15T09:00:18.000Z","ordinal":18,"type":"event_msg","payload":{"type":"token_count","info":{"total_token_usage":{"input_tokens":"1","output_tokens":-5,"total_tokens":1.5}},"rate_limits":null}}
+{"timestamp":"2026-11-15T09:00:19.000Z","ordinal":19,"type":"event_msg","payload":{"type":"token_count","info":{"total_token_usage":{"input_tokens":10,"output_tokens":2}},"rate_limits":null}}
+{"timestamp":"2026-11-15T09:00:20.000Z","ordinal":20,"type":"event_msg","payload":{"no_type":true}}
+{"timestamp":"2026-11-15T09:00:21.000Z","ordinal":21,"type":"event_msg","payload":{"type":"user_message","message":42}}
+{"timestamp":"2026-11-15T09:00:22.000Z","ordinal":22,"type":"event_msg","payload":{"type":"patch_apply_end","call_id":"call_h3","changes":{},"status":"completed"}}
+{"timestamp":"2026-11-15T09:00:23.000Z","ordinal":23,"type":"event_msg","payload":{"type":"turn_aborted","turn_id":5,"reason":"<script>"}}
+{"timestamp":"2026-11-15T09:00:24.000Z","ordinal":24,"type":"event_msg","payload":{"type":"task_complete","turn_id":"00000000-0000-4000-8000-0000000000a1","error":"string-not-object"}}
+{"timestamp":"2026-11-15T09:00:25.000Z","ordinal":25,"type":"response_item","payload":"payload is a string"}
+{"timestamp":"2026-11-15T09:00:26.000Z","ordinal":26,"type":"turn_context","payload":{"model":7}}
+{"timestamp":"yesterday","type":"event_msg","payload":{"type":"task_started","turn_id":"00000000-0000-4000-8000-0000000000a1"}}
+{"timestamp":123,"type":"event_msg","payload":{"type":"task_started"}}
+{"type":"event_msg","payload":{"type":"agent_message","message":"no timestamp"}}
+{"timestamp":"2026-11-15T09:00:27.000Z","ordinal":27,"type":"future_type_xyz","payload":{}}
+{"timestamp":"2026-11-15T09:00:28.000Z","ordinal":28,"type":"inter_agent_communication","payload":{"author":"x"}}
+[]
+7
+{"timestamp":"2026-11-15T09:00:40.000Z","ordinal":99,"type":"event_msg","payload":{"type":"agent_message","message":"proto"},"__proto__":{"polluted":true},"constructor":{"x":1}}
