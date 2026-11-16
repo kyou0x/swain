@@ -1,0 +1,19 @@
+{
+  "files": [],
+  "references": [
+    { "path": "packages/core" },
+    { "path": "packages/model" },
+    { "path": "packages/otlp" },
+    { "path": "packages/adapter-claude-code" },
+    { "path": "packages/adapter-codex-cli" },
+    { "path": "packages/adapter-gemini-cli" },
+    { "path": "packages/adapter-opencode" },
+    { "path": "packages/report" },
+    { "path": "packages/store" },
+    { "path": "packages/db" },
+    { "path": "packages/client" },
+    { "path": "packages/server" },
+    { "path": "packages/cli" },
+    { "path": "packages/contract-tests" }
+  ]
+}

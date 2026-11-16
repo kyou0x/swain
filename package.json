@@ -1,0 +1,64 @@
+{
+  "name": "swain",
+  "version": "0.0.0",
+  "description": "Local-first, self-hosted observability for AI agents: fleet view, multi-agent timelines and every command each agent ran.",
+  "private": true,
+  "license": "Apache-2.0",
+  "author": "kyou0x",
+  "homepage": "https://github.com/kyou0x/swain#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kyou0x/swain.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kyou0x/swain/issues"
+  },
+  "keywords": [
+    "ai-agents",
+    "observability",
+    "opentelemetry",
+    "otlp",
+    "llm",
+    "multi-agent",
+    "claude-code",
+    "tracing",
+    "self-hosted",
+    "local-first"
+  ],
+  "type": "module",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "workspaces": [
+    "packages/core",
+    "packages/model",
+    "packages/otlp",
+    "packages/adapter-claude-code",
+    "packages/adapter-codex-cli",
+    "packages/adapter-gemini-cli",
+    "packages/adapter-opencode",
+    "packages/report",
+    "packages/store",
+    "packages/db",
+    "packages/client",
+    "packages/server",
+    "packages/cli",
+    "packages/contract-tests"
+  ],
+  "scripts": {
+    "clean": "node -e \"const fs=require('node:fs');for(const d of fs.readdirSync('packages'))fs.rmSync('packages/'+d+'/dist',{recursive:true,force:true})\"",
+    "atm": "node packages/cli/dist/src/bin.js",
+    "swain": "node packages/cli/dist/src/swain-bin.js",
+    "build": "tsc -b",
+    "fuzz:otlp": "npm run build && node packages/otlp/dist/test/fuzz-long.js",
+    "lint": "biome ci .",
+    "policy": "node tools/policy-check.mjs && node tools/lockfile-check.mjs",
+    "test": "node --disallow-code-generation-from-strings --test \"packages/*/dist/test/**/*.test.js\" && node --test \"tools/*.test.mjs\"",
+    "check": "npm run lint && npm run clean && npm run build && npm run policy && npm test"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.6.7",
+    "@types/node": "24.19.2",
+    "typescript": "6.0.3"
+  }
+}
